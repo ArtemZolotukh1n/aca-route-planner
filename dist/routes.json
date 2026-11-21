@@ -1,0 +1,955 @@
+{
+  "routes": [
+    {
+      "id": "north",
+      "title": "Север Восточных королевств",
+      "choice": "Север · Стальгорн",
+      "continent": 1415,
+      "start": "Стальгорн",
+      "finish": "Стальгорн",
+      "layers": [
+        1426,
+        1437,
+        1417,
+        1424,
+        1416
+      ],
+      "branches": [],
+      "requirements": [
+        "Открыты точки полётов Стальгорна, Menethil Harbor и Southshore.",
+        "Заказ и требуемый предмет остаются в сумках до сдачи."
+      ],
+      "steps": [
+        {
+          "hub": "1573",
+          "mode": "ride"
+        },
+        {
+          "hub": "1571",
+          "mode": "flight"
+        },
+        {
+          "stop": "8305",
+          "instruction": "Лети из Стальгорна в Menethil Harbor, затем верхом к Kixxle. Все пять заказов сдаются здесь. Дальше двигайся на север к мосту Thandol Span."
+        },
+        {
+          "at": [
+            1437,
+            51.3,
+            10.3
+          ],
+          "label": "Мост Тандола",
+          "mode": "ride"
+        },
+        {
+          "at": [
+            1417,
+            45.4,
+            88.9
+          ],
+          "label": "Выход моста в Арати",
+          "mode": "ride"
+        },
+        {
+          "stop": "257296",
+          "instruction": "После моста Thandol Span двигайся к Muggol. Возвращаться в Menethil ради перелёта в Арати не нужно."
+        },
+        {
+          "stop": "257304",
+          "instruction": "От Muggol езжай на северо-запад к Alyce. Затем через западный проход Арати — в Hillsbrad."
+        },
+        {
+          "at": [
+            1417,
+            20.9,
+            30.6
+          ],
+          "label": "Западный проход Арати",
+          "mode": "ride"
+        },
+        {
+          "at": [
+            1424,
+            81,
+            56.1
+          ],
+          "label": "Вход в Hillsbrad",
+          "mode": "ride"
+        },
+        {
+          "stop": "261932",
+          "instruction": "Двигайся к Gorgrash на востоке Hillsbrad. После двух сдач продолжай на север к Kris Legace."
+        },
+        {
+          "stop": "3536",
+          "instruction": "После Pilferer's Gloves у Kris поднимайся на север к восточной части Alterac. Bath’rah стоит у реки; его координаты указаны по карте Alterac."
+        },
+        {
+          "at": [
+            1424,
+            75.5,
+            24.6
+          ],
+          "label": "Восточная тропа в Alterac",
+          "mode": "ride"
+        },
+        {
+          "at": [
+            1416,
+            81.7,
+            77.5
+          ],
+          "label": "Восточная тропа Alterac",
+          "mode": "ride"
+        },
+        {
+          "stop": "6176",
+          "instruction": "После Bath’rah вернись через восточную тропу в предгорья, затем к основному южному проходу: Hillsbrad 54.8, 11.3 → Alterac 51.8, 68.8. Через хребет к Sos’mol напрямую не ехать."
+        },
+        {
+          "at": [
+            1416,
+            81.7,
+            77.5
+          ],
+          "label": "Возврат на восточную тропу",
+          "mode": "ride"
+        },
+        {
+          "at": [
+            1424,
+            75.5,
+            24.6
+          ],
+          "label": "Спуск в Hillsbrad",
+          "mode": "ride"
+        },
+        {
+          "at": [
+            1424,
+            54.8,
+            11.3
+          ],
+          "label": "Основной проход в Alterac",
+          "mode": "ride"
+        },
+        {
+          "at": [
+            1416,
+            51.8,
+            68.8
+          ],
+          "label": "Южный вход Alterac",
+          "mode": "ride"
+        },
+        {
+          "stop": "257281",
+          "instruction": "Через южный проход езжай на запад к Sos’mol. Затем продолжай к Alan Sneeks."
+        },
+        {
+          "stop": "257282",
+          "instruction": "После трёх сдач у Alan возвращайся тем же основным проходом в Hillsbrad."
+        },
+        {
+          "at": [
+            1416,
+            51.8,
+            68.8
+          ],
+          "label": "Возврат к южному проходу",
+          "mode": "ride"
+        },
+        {
+          "at": [
+            1424,
+            54.8,
+            11.3
+          ],
+          "label": "Выход в Hillsbrad",
+          "mode": "ride"
+        },
+        {
+          "stop": "261928",
+          "instruction": "Сдай Free Action Potion у Webbed Mudsnout Gnoll. Дальше в Southshore и грифоном в Стальгорн."
+        },
+        {
+          "hub": "2432",
+          "mode": "ride"
+        },
+        {
+          "hub": "1573",
+          "mode": "flight"
+        }
+      ]
+    },
+    {
+      "id": "south",
+      "title": "Юг Восточных королевств",
+      "choice": "Юг · Штормград",
+      "continent": 1415,
+      "start": "Штормград",
+      "finish": "Штормград",
+      "layers": [
+        1429,
+        1436,
+        1431,
+        1430,
+        1435,
+        1419,
+        1434,
+        1433,
+        2548
+      ],
+      "branches": [
+        {
+          "id": "stv",
+          "label": "Начать с Booty Bay и STV",
+          "description": "Ещё 5 заказов / 375 репутации. Стартовый рейс меняется на Booty Bay; далее едешь на север, без возврата в STV.",
+          "start": "Booty Bay",
+          "default": false
+        },
+        {
+          "id": "river",
+          "label": "Добавить Spek в Riverglades",
+          "description": "Ещё 5 заказов / 625 репутации у одного NPC. Основной вход — через Morgan’s Vigil; отдельный наземный крюк к Farholde.",
+          "default": false
+        }
+      ],
+      "requirements": [
+        "Открыты Stormwind, Sentinel Hill и Nethergarde Keep; для STV — Booty Bay.",
+        "Для Riverglades основной перелёт требует Morgan’s Vigil и Farholde Keep; запасной путь требует Lakeshire и Farholde Keep.",
+        "Battered Trunk находится внутри склепа Raven Hill, а не на поверхности."
+      ],
+      "steps": [
+        {
+          "hub": "352",
+          "mode": "ride"
+        },
+        {
+          "hub": "2859",
+          "mode": "flight",
+          "branch": "stv"
+        },
+        {
+          "stop": "7853",
+          "instruction": "Если включён STV: лети из Stormwind в Booty Bay. В городе сначала Scooty, затем MacKinley и Narkk, после чего выходи на север.",
+          "branch": "stv"
+        },
+        {
+          "stop": "2501",
+          "instruction": "В Booty Bay передай Green Iron Gauntlets “Sea Wolf” MacKinley. Затем двигайся к Narkk.",
+          "branch": "stv"
+        },
+        {
+          "stop": "2663",
+          "instruction": "После Dark Leather Shoulders у Narkk выходи из Booty Bay на север.",
+          "branch": "stv"
+        },
+        {
+          "stop": "14508",
+          "instruction": "Продолжай на север к арене Gurubashi и Short John Mithril. После сдачи — к Hekshi на северо-востоке STV.",
+          "branch": "stv"
+        },
+        {
+          "stop": "261961",
+          "instruction": "После Hekshi возвращайся к северному выходу из STV. Затем направляйся в западную часть Duskwood, к Raven Hill.",
+          "branch": "stv"
+        },
+        {
+          "at": [
+            1434,
+            39.2,
+            6.5
+          ],
+          "label": "Северный выход из STV",
+          "mode": "ride",
+          "branch": "stv"
+        },
+        {
+          "at": [
+            1431,
+            44.6,
+            87.9
+          ],
+          "label": "Вход в Duskwood",
+          "mode": "ride",
+          "branch": "stv"
+        },
+        {
+          "hub": "523",
+          "mode": "flight",
+          "unless": "stv"
+        },
+        {
+          "at": [
+            1436,
+            67.9,
+            62.8
+          ],
+          "label": "Мост Westfall → Duskwood",
+          "mode": "ride",
+          "unless": "stv"
+        },
+        {
+          "at": [
+            1431,
+            7.9,
+            63.8
+          ],
+          "label": "Западный вход в Duskwood",
+          "mode": "ride",
+          "unless": "stv"
+        },
+        {
+          "stop": "BATTERED_TRUNK",
+          "instruction": "В компактном варианте лети из Stormwind в Sentinel Hill и пересекай восточный мост в Duskwood. Battered Trunk — глубоко в склепе Raven Hill. После сдачи Silver Skeleton Key езжай через зону на восток."
+        },
+        {
+          "stop": "3134",
+          "instruction": "У Kzixx сдаются четыре заказа. Затем на восток через Duskwood 88.4, 40.9 → Deadwind Pass 32.0, 35.3."
+        },
+        {
+          "at": [
+            1431,
+            88.4,
+            40.9
+          ],
+          "label": "Выход Duskwood",
+          "mode": "ride"
+        },
+        {
+          "at": [
+            1430,
+            32,
+            35.3
+          ],
+          "label": "Вход Deadwind",
+          "mode": "ride"
+        },
+        {
+          "stop": "257750",
+          "instruction": "От основной дороги Deadwind спустись к Calliard, сдай Mithril Spurs и продолжай южнее к Hastings."
+        },
+        {
+          "stop": "257743",
+          "instruction": "Три Artisan у Hastings. Затем возвращайся на север к основной дороге и выезжай в Swamp of Sorrows через восточный проход."
+        },
+        {
+          "at": [
+            1430,
+            58.8,
+            42.2
+          ],
+          "label": "Восточный проход Deadwind",
+          "mode": "ride"
+        },
+        {
+          "at": [
+            1435,
+            3.7,
+            61.1
+          ],
+          "label": "Вход в Swamp",
+          "mode": "ride"
+        },
+        {
+          "at": [
+            1435,
+            20,
+            47
+          ],
+          "label": "Северная дорога Swamp",
+          "mode": "ride"
+        },
+        {
+          "at": [
+            1435,
+            40,
+            38
+          ],
+          "label": "Обход Stonard с севера",
+          "mode": "ride"
+        },
+        {
+          "stop": "262379",
+          "instruction": "К Bullets подъезжай с северной стороны Stonard. Это ордынский лагерь: маршрут Альянса через него не проходит. После двух сдач двигайся к Mukomonji."
+        },
+        {
+          "stop": "262306",
+          "instruction": "У Mukomonji три заказа. Далее к настоящему южному проходу в Blasted Lands, обходя Stonard. Прямого проезда через горы к Kum’isha нет."
+        },
+        {
+          "at": [
+            1435,
+            33.4,
+            74.8
+          ],
+          "label": "Проход в Blasted Lands",
+          "mode": "ride"
+        },
+        {
+          "at": [
+            1419,
+            52.2,
+            10.7
+          ],
+          "label": "Северный вход Blasted Lands",
+          "mode": "ride"
+        },
+        {
+          "stop": "7363",
+          "instruction": "Четыре Artisan у Kum’isha. Дальше к Alliance FP Nethergarde Keep и грифоном в Stormwind."
+        },
+        {
+          "hub": "8609",
+          "mode": "ride"
+        },
+        {
+          "hub": "352",
+          "mode": "flight",
+          "unless": "river"
+        },
+        {
+          "hub": "2299",
+          "mode": "flight",
+          "branch": "river",
+          "unless": "river-sw"
+        },
+        {
+          "hub": "257087",
+          "mode": "flight",
+          "branch": "river",
+          "unless": "river-sw"
+        },
+        {
+          "stop": "262284",
+          "instruction": "Выполняя Spek-ветку, лети из Nethergarde через Morgan’s Vigil в Farholde Keep (основной вариант) либо через Stormwind и Lakeshire, если Morgan не открыт. От Farholde верхом к Spek, после пяти сдач обратно к тому же FP.",
+          "branch": "river"
+        },
+        {
+          "hub": "257087",
+          "mode": "ride",
+          "branch": "river"
+        },
+        {
+          "hub": "2299",
+          "mode": "flight",
+          "branch": "river",
+          "unless": "river-sw"
+        },
+        {
+          "hub": "8609",
+          "mode": "flight",
+          "branch": "river",
+          "unless": "river-sw"
+        },
+        {
+          "hub": "352",
+          "mode": "flight",
+          "branch": "river",
+          "unless": "river-sw"
+        }
+      ]
+    },
+    {
+      "id": "kalimdor-south",
+      "title": "Юг Калимдора",
+      "choice": "Юг Калимдора · Танарис",
+      "continent": 1414,
+      "start": "Gadgetzan",
+      "finish": "Gadgetzan",
+      "layers": [
+        1446,
+        1441,
+        1444,
+        1445,
+        1449,
+        1451,
+        1413
+      ],
+      "branches": [
+        {
+          "id": "coast",
+          "label": "Yeh’kinya в Steamwheedle Port",
+          "description": "Ещё 1 заказ / 125 репутации. Отдельный восточный выезд из Gadgetzan, затем возврат в город.",
+          "default": false
+        },
+        {
+          "id": "torwa",
+          "label": "Torwa на юго-востоке Un’Goro",
+          "description": "Ещё 1 заказ / 125 репутации. Заменяет перелёт в лагерь наземным въездом из Tanaris и проездом через кратер; для быстрого захода оставь выключенным.",
+          "default": false
+        },
+        {
+          "id": "silithus",
+          "label": "Продолжить из Un’Goro в Silithus",
+          "description": "Ещё 2 заказа / 400 репутации: Jarund у прохода и Khur в Cenarion Hold. Затем перелёт в Gadgetzan; четыре сдачи у Gryfe доступны и без этой ветки.",
+          "default": false
+        },
+        {
+          "id": "ortell",
+          "label": "Пещера Hermit Ortell",
+          "description": "Ещё 1 заказ / 200 репутации. Дальний выезд из Cenarion Hold к пещере и обратно.",
+          "requires": "silithus",
+          "default": false
+        },
+        {
+          "id": "dustwallow",
+          "label": "Круг по Dustwallow Marsh",
+          "description": "5 заказов / 625 репутации у четырёх получателей по всей зоне. Включён по умолчанию; отключи на этот заход, если хочешь меньше ездить верхом.",
+          "default": true
+        }
+      ],
+      "requirements": [
+        "Закупку по ценам Альянса сделай до поездки: нейтральный аукцион Gadgetzan — другой рынок.",
+        "Для четырёх сдач в Marshal’s Refuge открой Gryfe (Un’Goro 45.2, 5.8); нужны также Gadgetzan и Thalanaar.",
+        "Ветка Dustwallow требует Theramore; для возвращения из Silithus — Alliance FP Cenarion Hold.",
+        "Great Lift, Freewind Post и ордынские FP для этого пути не нужны."
+      ],
+      "steps": [
+        {
+          "hub": "7823",
+          "mode": "ride"
+        },
+        {
+          "stop": "7408",
+          "instruction": "Старт в Gadgetzan. Сдай Truesilver Rod у Luglunket. Проверь текущую цену writ и предмета до покупки."
+        },
+        {
+          "stop": "8579",
+          "instruction": "Дополнительный выезд к Yeh’kinya в Steamwheedle Port. После Big Voodoo Robe вернись в Gadgetzan к Jhordy.",
+          "branch": "coast"
+        },
+        {
+          "stop": "14743",
+          "instruction": "В Gadgetzan передай Gyromatic Micro-Adjuster у Jhordy. Далее Vizzklick и Pestlezugg."
+        },
+        {
+          "stop": "6568",
+          "instruction": "White Bandit Mask сдаётся Vizzklick в Gadgetzan."
+        },
+        {
+          "stop": "5594",
+          "instruction": "Goblin Rocket Fuel сдаётся Pestlezugg в Gadgetzan. Далее четыре соседние сдачи в Marshal’s Refuge: вернись к Bera Stonehammer и лети к Gryfe. Если включён Torwa, вместо перелёта въезжай в Un’Goro с юго-востока."
+        },
+        {
+          "hub": "7823",
+          "mode": "ride",
+          "unless": "torwa"
+        },
+        {
+          "hub": "10583",
+          "mode": "flight",
+          "unless": "torwa"
+        },
+        {
+          "at": [
+            1446,
+            27.1,
+            57.7
+          ],
+          "label": "Спуск в Un’Goro",
+          "mode": "ride",
+          "branch": "torwa"
+        },
+        {
+          "at": [
+            1449,
+            70.5,
+            78.6
+          ],
+          "label": "Юго-восточный вход Un’Goro",
+          "mode": "ride",
+          "branch": "torwa"
+        },
+        {
+          "stop": "9619",
+          "instruction": "Из Tanaris спускайся в Un’Goro с юго-востока: Torwa почти у входа. Так не придётся возвращаться через весь кратер после прилёта в Marshal’s Refuge.",
+          "branch": "torwa"
+        },
+        {
+          "stop": "q94291",
+          "instruction": "Gibbert, Spark, Petra и Nergal стоят в Marshal’s Refuge около 43–44, 7–8, рядом с Gryfe 45.2, 5.8. Здесь четыре заказа (+500 репутации). Без ветки Torwa прилетай прямо к Gryfe из Gadgetzan; пересекать весь кратер не нужно."
+        },
+        {
+          "stop": "9272",
+          "instruction": "Wildvine Potion у Spark Nilminer в Marshal’s Refuge."
+        },
+        {
+          "stop": "9273",
+          "instruction": "Earthen Silk Belt у Petra Grossen в том же лагере."
+        },
+        {
+          "stop": "12959",
+          "instruction": "Thick Leather Ammo Pouch у Nergal завершает четыре сдачи в лагере. Без Silithus возвращайся к Gryfe и лети в Gadgetzan, затем к Mirage Raceway. При включённом Silithus езжай к западному проходу Un’Goro."
+        },
+        {
+          "hub": "10583",
+          "mode": "ride",
+          "unless": "silithus"
+        },
+        {
+          "hub": "7823",
+          "mode": "flight",
+          "unless": "silithus"
+        },
+        {
+          "at": [
+            1449,
+            29.4,
+            22.3
+          ],
+          "label": "Проход в Silithus",
+          "mode": "ride",
+          "branch": "silithus"
+        },
+        {
+          "at": [
+            1451,
+            82.4,
+            16
+          ],
+          "label": "Вход в Silithus",
+          "mode": "ride",
+          "branch": "silithus"
+        },
+        {
+          "stop": "q94322",
+          "instruction": "Jarund стоит почти у входа в Silithus. После Limited Invulnerability Potion двигайся к Cenarion Hold.",
+          "branch": "silithus"
+        },
+        {
+          "stop": "q94340",
+          "instruction": "Truesilver Transformer у Khur в Cenarion Hold. Для возвращения используй Alliance FP 50.6, 34.5, не соседний ордынский.",
+          "branch": "silithus"
+        },
+        {
+          "stop": "15194",
+          "instruction": "Дополнительный далёкий выезд в пещеру Hermit Ortell. После Shadoweave Mask возвращайся в Cenarion Hold; прямого проверенного перехода из пещеры в Tanaris нет.",
+          "branch": "ortell"
+        },
+        {
+          "hub": "15177",
+          "mode": "ride",
+          "branch": "silithus"
+        },
+        {
+          "hub": "7823",
+          "mode": "flight",
+          "branch": "silithus"
+        },
+        {
+          "at": [
+            1446,
+            50.6,
+            24.4
+          ],
+          "label": "Проход в Thousand Needles",
+          "mode": "ride"
+        },
+        {
+          "at": [
+            1441,
+            74.9,
+            93.3
+          ],
+          "label": "Южный вход в Thousand Needles",
+          "mode": "ride"
+        },
+        {
+          "stop": "4496",
+          "instruction": "Пять соседних получателей на Mirage Raceway. Начни с Goblin Pit Boss."
+        },
+        {
+          "stop": "4706",
+          "instruction": "Передай Big Bronze Bomb у Razzeric. Затем к “Plucky” Johnson."
+        },
+        {
+          "stop": "6626",
+          "instruction": "“Plucky” Johnson здесь курица; новый writ описывает передачу ножа ей. Старую цепочку Classic автоматически проходить не требуется."
+        },
+        {
+          "stop": "6548",
+          "instruction": "Greater Adept’s Robe у Magus Tirth. Затем Elixir of Defense у Rizzle."
+        },
+        {
+          "stop": "4720",
+          "instruction": "После Rizzle езжай по долине на запад к выходу Feralas. Для короткой поездки здесь можно развернуться в Gadgetzan. Great Lift ведёт в Barrens и здесь не нужен."
+        },
+        {
+          "at": [
+            1441,
+            8.3,
+            11.9
+          ],
+          "label": "Западный проход Thousand Needles",
+          "mode": "ride"
+        },
+        {
+          "at": [
+            1444,
+            88.7,
+            41.1
+          ],
+          "label": "Восточный вход Feralas",
+          "mode": "ride"
+        },
+        {
+          "hub": "4319",
+          "mode": "ride"
+        },
+        {
+          "stop": "262143",
+          "instruction": "Scout Raroul находится южнее ордынского Camp Mojache. Обойди лагерь с юга, сдай четыре заказа и вернись к Thalanaar. С включённым Dustwallow лети в Theramore; если пропускаешь этот блок — сразу обратно в Gadgetzan."
+        },
+        {
+          "hub": "4319",
+          "mode": "ride"
+        },
+        {
+          "hub": "4321",
+          "mode": "flight",
+          "branch": "dustwallow"
+        },
+        {
+          "stop": "262072",
+          "instruction": "Из Thalanaar прямым рейсом в Theramore. Начни круг Dustwallow с The Ravenous: Craftsman’s Monocle и Dusky Bracers.",
+          "branch": "dustwallow"
+        },
+        {
+          "stop": "6546",
+          "instruction": "После The Ravenous направляйся к Tabetha, затем на северо-запад к Mudcrush.",
+          "branch": "dustwallow"
+        },
+        {
+          "stop": "4503",
+          "instruction": "Передай Lesser Stoneshield Potion. К Ugbert подходи с восточной стороны Brackenwall Village, обходя ордынский лагерь.",
+          "branch": "dustwallow"
+        },
+        {
+          "stop": "270919",
+          "instruction": "Steel Weapon Chain у Ugbert сдаётся в Dustwallow Marsh. Комментарий о Swamp of Sorrows ошибочен. Дальше обратно в Theramore и грифоном Gadgetzan.",
+          "branch": "dustwallow"
+        },
+        {
+          "hub": "4321",
+          "mode": "ride",
+          "branch": "dustwallow"
+        },
+        {
+          "hub": "7823",
+          "mode": "flight"
+        }
+      ]
+    },
+    {
+      "id": "kalimdor-north",
+      "title": "Север Калимдора",
+      "choice": "Север Калимдора · Тельдрассил",
+      "continent": 1414,
+      "start": "Rut’theran / Тельдрассил",
+      "finish": "Rut’theran / Тельдрассил",
+      "layers": [
+        1438,
+        1439,
+        1440,
+        1442,
+        1448,
+        1450,
+        1452
+      ],
+      "branches": [
+        {
+          "id": "ziz",
+          "label": "Ziz Fizziks в Stonetalon",
+          "description": "Ещё 5 заказов / 375 репутации. Перед Ashenvale — туда и обратно через Talondeep Path; Alliance FP на далёкой вершине не нужен.",
+          "default": false
+        },
+        {
+          "id": "everlook",
+          "label": "Everlook и Bor’dorc",
+          "description": "Ещё 2 заказа / 400 репутации. Из Talonbranch перелёт в Everlook, затем в Moonglade. Глубокий юг Winterspring не включён.",
+          "default": false
+        }
+      ],
+      "requirements": [
+        "Открыты Rut’theran, Auberdine, Astranaar, Talonbranch и обычный Alliance FP Sindrayl в Moonglade.",
+        "Если Sindrayl ещё не открыта: первый наземный проход через Timbermaw; для прохода без нападения нужно Unfriendly или выше.",
+        "Emerald Sanctuary не имеет подтверждённого FP. Бесплатный друидский рейс Nighthaven паладину не подходит."
+      ],
+      "steps": [
+        {
+          "hub": "3838",
+          "mode": "ride"
+        },
+        {
+          "hub": "3841",
+          "mode": "flight"
+        },
+        {
+          "hub": "4267",
+          "mode": "flight"
+        },
+        {
+          "at": [
+            1440,
+            42.3,
+            71.1
+          ],
+          "label": "Talondeep Path",
+          "mode": "ride",
+          "branch": "ziz"
+        },
+        {
+          "at": [
+            1442,
+            78.2,
+            42.8
+          ],
+          "label": "Выход Talondeep",
+          "mode": "ride",
+          "branch": "ziz"
+        },
+        {
+          "stop": "4201",
+          "instruction": "Дополнительная поездка перед Ashenvale: от Astranaar через Talondeep Path к Ziz и назад. Sun Rock Retreat — ордынский FP, а Alliance Stonetalon Peak далеко от получателя.",
+          "branch": "ziz"
+        },
+        {
+          "at": [
+            1442,
+            78.2,
+            42.8
+          ],
+          "label": "Возврат в Talondeep",
+          "mode": "ride",
+          "branch": "ziz"
+        },
+        {
+          "at": [
+            1440,
+            42.3,
+            71.1
+          ],
+          "label": "Возврат в Ashenvale",
+          "mode": "ride",
+          "branch": "ziz"
+        },
+        {
+          "stop": "257315",
+          "instruction": "Покупки в Darnassus, затем через портал в Rut’theran. Лети Rut’theran → Auberdine → Astranaar; первый отрезок можно заменить кораблём. Из Astranaar к Ash’alari."
+        },
+        {
+          "stop": "257322",
+          "instruction": "Продолжай к Murache южнее Ash’alari, затем двигайся на восток к Cowardly Peon."
+        },
+        {
+          "stop": "257316",
+          "instruction": "Два заказа у Cowardly Peon. Далее Grembly на северо-востоке зоны."
+        },
+        {
+          "stop": "257317",
+          "instruction": "После Moonsight Rifle у Grembly вернись по основной дороге к ответвлению Felwood: Ashenvale 55.8, 30.2 → Felwood 54.5, 89.2."
+        },
+        {
+          "at": [
+            1440,
+            55.8,
+            30.2
+          ],
+          "label": "Проход в Felwood",
+          "mode": "ride"
+        },
+        {
+          "at": [
+            1448,
+            54.5,
+            89.2
+          ],
+          "label": "Южный вход Felwood",
+          "mode": "ride"
+        },
+        {
+          "stop": "10922",
+          "instruction": "Пять получателей стоят рядом в Emerald Sanctuary. Порядок внутри лагеря почти не влияет на поездку. После сдач предстоит наземный проезд Felwood на север: FP в лагере нет."
+        },
+        {
+          "stop": "11019",
+          "instruction": "Goblin Land Mine у Jessir Moonbow — рядом с остальными получателями Emerald Sanctuary."
+        },
+        {
+          "stop": "10924",
+          "instruction": "Wild Leather Helmet у Ivy Leafrunner в Emerald Sanctuary."
+        },
+        {
+          "stop": "10921",
+          "instruction": "Ornate Mithril Shoulders у Taronn Redfeather. Проверь текущую цену writ и предмета до покупки."
+        },
+        {
+          "stop": "9116",
+          "instruction": "Shadoweave Robe у Eridan. Затем езжай на север по основной дороге Felwood к Impsy и Talonbranch."
+        },
+        {
+          "stop": "14470",
+          "instruction": "Impsy далеко от южного лагеря, но близко к дороге на Talonbranch. Если всё равно едешь на север, отдельного большого крюка здесь нет."
+        },
+        {
+          "hub": "12578",
+          "mode": "ride"
+        },
+        {
+          "hub": "11138",
+          "mode": "flight",
+          "branch": "everlook"
+        },
+        {
+          "stop": "q94333",
+          "instruction": "Дополнительная ветка: Talonbranch → Everlook. Xizzer находится в городе; после Ebon Shiv продолжай к Bor’dorc.",
+          "branch": "everlook"
+        },
+        {
+          "stop": "262041",
+          "instruction": "После Distilled Firewater у Bor’dorc возвращайся к обычному Alliance FP Everlook и лети в Moonglade. Южные демонические ущелья Winterspring к этой ветке не относятся.",
+          "branch": "everlook"
+        },
+        {
+          "hub": "11138",
+          "mode": "ride",
+          "branch": "everlook"
+        },
+        {
+          "hub": "10897",
+          "mode": "flight"
+        },
+        {
+          "stop": "12024",
+          "instruction": "Из Talonbranch лети к Sindrayl 48.1, 67.3 в Moonglade, затем в Nighthaven. Это обычный рейс Альянса, доступный паладину. Сначала Meliri."
+        },
+        {
+          "stop": "12029",
+          "instruction": "Два заказа у Narianna. Затем на север к Dendrite и Mylentha."
+        },
+        {
+          "stop": "11802",
+          "instruction": "Great Rage Potion у Dendrite Starblaze на севере Nighthaven."
+        },
+        {
+          "stop": "11795",
+          "instruction": "После Star Belt у Mylentha возвращайся к Sindrayl. Перелёт Moonglade → Auberdine → Rut’theran. Последний отрезок можно заменить кораблём."
+        },
+        {
+          "hub": "10897",
+          "mode": "ride"
+        },
+        {
+          "hub": "3841",
+          "mode": "flight"
+        },
+        {
+          "hub": "3838",
+          "mode": "flight"
+        }
+      ]
+    }
+  ]
+}

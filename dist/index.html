@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Маршруты заказов Azeroth Commerce Authority в WoW Forever: карта, покупки и прогресс до Honored.">
+  <title>ACA — торговые маршруты · WoW Forever</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site-config.js" defer></script>
+  <script src="planner-core.js" defer></script>
+  <script src="prices.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="#route" class="brand" aria-label="Azeroth Commerce Authority, маршрут">
+      <span class="brand-mark" aria-hidden="true">A</span>
+      <span><strong>Azeroth Commerce Authority</strong><small>WoW Forever · Альянс · EU PvP</small></span>
+    </a>
+    <span class="edition">Торговые маршруты <span id="build-version"></span></span>
+  </header>
+
+  <main id="app" hidden>
+    <div class="profile-toolbar" aria-label="Персонажи и сохранения">
+      <label class="field">Персонаж<select id="profile-picker" aria-label="Выбрать персонажа"></select></label>
+      <div class="toolbar-actions"><button type="button" id="add-profile" class="button secondary">Добавить персонажа</button><button type="button" id="edit-profile" class="button secondary">Настройки</button><button type="button" id="delete-profile" class="text-button">Удалить</button></div>
+      <div class="backup-actions"><button type="button" id="export-progress" class="text-button">Сохранить в файл</button><button type="button" id="import-progress" class="text-button">Загрузить прогресс</button><input type="file" id="backup-file" accept=".json,application/json" hidden></div>
+    </div>
+    <p id="storage-warning" class="persistent-notice" role="status" hidden>Браузер не сохраняет изменения. Перед закрытием страницы сохрани прогресс в файл.</p>
+    <section class="market-panel" aria-label="Цены аукциона">
+      <div><strong>EU PvP · Альянс</strong><p id="price-snapshot" class="muted"></p><p id="price-checked" class="muted"></p></div>
+      <div class="market-actions"><button type="button" id="refresh-prices" class="button secondary">Обновить цены</button><a id="price-source" target="_blank" rel="noopener noreferrer">Источник</a></div>
+      <p id="price-status" class="market-status" role="status" aria-live="polite"></p>
+    </section>
+    <section class="progress-section" aria-labelledby="progress-title">
+      <div class="progress-copy">
+        <p class="eyebrow">Репутация торговой фракции</p>
+        <h1 id="progress-title">Твой путь к <em id="goal-name">Honored</em></h1>
+        <p id="standing" class="standing"></p>
+        <button type="button" class="text-button" id="adjust-reputation">Изменить репутацию</button>
+        <p id="reputation-notice" class="muted" hidden></p>
+      </div>
+      <div class="goal-summary">
+        <div class="goal-values"><span><span id="remaining" class="large-number">—</span><small>репутации осталось</small></span><span id="goal-caption" class="goal-caption"></span></div>
+        <progress id="rep-progress" value="0" max="9000" aria-label="Расчётный прогресс к цели"></progress>
+        <p class="muted">Расчёт по отмеченным сдачам, без бонусов к репутации.</p>
+      </div>
+    </section>
+
+    <div class="navigation-row">
+      <nav class="tabs" aria-label="Разделы">
+        <button type="button" data-view="route" aria-current="page">Маршрут</button>
+        <button type="button" data-view="shopping">Покупки</button>
+        <button type="button" data-view="catalog">Все заказы <span>150</span></button>
+      </nav>
+      <div class="round-control"><span id="round-status"></span><button type="button" class="button secondary" id="next-round">Следующий круг</button></div>
+    </div>
+
+    <div class="route-toolbar">
+      <label class="field">Маршрут<select id="route-picker" aria-label="Выбрать маршрут"></select></label>
+      <div id="route-options" class="route-options" aria-label="Дополнительные ветки"></div>
+    </div>
+
+    <section id="route-view" class="view">
+      <div class="route-layout">
+        <aside class="route-sidebar" aria-labelledby="route-title">
+          <div class="sidebar-heading"><p class="eyebrow">Маршрут</p><h2 id="route-title"></h2><p id="route-stats" class="muted"></p></div>
+          <div class="route-start"><strong id="route-start"></strong><span>Закупку по рынку Альянса сделай до поездки.</span><button type="button" class="text-button" data-open-shopping>Открыть список покупок</button></div>
+          <ol id="route-stops" class="route-stops"></ol>
+          <div class="route-end"><strong id="route-finish"></strong><span>Переезды и перелёты показаны на карте.</span></div>
+          <p id="route-cost" class="sidebar-note"></p>
+        </aside>
+        <div class="route-main">
+          <label class="field mobile-stop-selector">Получатель<select id="route-stop-select" aria-label="Точка маршрута"></select></label>
+          <div class="section-heading"><div><p class="eyebrow">Карта маршрута</p><h2 id="route-zone-title"></h2></div><div class="map-controls"><div class="segmented" role="group" aria-label="Масштаб карты"><button type="button" data-map-mode="overview">Весь маршрут</button><button type="button" data-map-mode="zone">Карта зоны</button></div><label class="field compact route-zone-field">Зона<select id="route-zone" aria-label="Зона маршрута"></select></label></div></div>
+          <div id="route-map" class="game-map" role="group" aria-label="Карта маршрута"></div>
+          <p class="map-caption">Номера показывают порядок сдачи. Линии соединяют ориентиры схематично; наземный трек по каждому изгибу дороги не отрисован. Переходы через горы отмечены отдельно.</p>
+          <details class="route-legs"><summary>Переезды, переправы и точки полёта</summary><ol id="route-leg-list"></ol></details>
+          <section class="stop-detail" aria-labelledby="stop-name">
+            <div class="section-heading"><div><p class="eyebrow" id="stop-kicker"></p><h2 id="stop-name"></h2></div><button type="button" id="copy-waypoint" class="button secondary">Копировать /way</button></div>
+            <p id="stop-instruction" class="instruction"></p>
+            <div id="stop-orders"></div>
+          </section>
+          <details class="route-audit"><summary>Проверка маршрута и расходов</summary><div id="route-audit-content"></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="shopping-view" class="view" hidden>
+      <div class="section-heading"><div><p class="eyebrow">Перед выездом</p><h2 id="shopping-title">Покупки на маршрут</h2></div><button type="button" id="copy-shopping" class="button secondary">Копировать весь список</button></div>
+      <p class="section-description">На каждый заказ нужен сам writ и готовый предмет. Отмечай их отдельно: предмет может уже быть в сумке или быть изготовлен самостоятельно. Crafted Solid Shot нужен в количестве 200 штук.</p>
+      <div id="shopping-status" class="shopping-status" aria-live="polite"></div>
+      <div id="shopping-orders"></div>
+    </section>
+
+    <section id="catalog-view" class="view" hidden>
+      <div class="section-heading"><div><p class="eyebrow">Справочник WoW Forever</p><h2>Все заказы</h2></div><span class="catalog-count">134 с точкой сдачи · 16 без подтверждения</span></div>
+      <div class="catalog-filters"><label class="field">Зона<select id="catalog-zone" aria-label="Зона каталога"></select></label><label class="field">Поиск<input type="search" id="catalog-search" placeholder="Название предмета или получателя" autocomplete="off"></label></div>
+      <p id="catalog-notice" class="section-description"></p>
+      <div id="catalog-map" class="game-map" role="group" aria-label="Карта получателей заказов"></div>
+      <div id="catalog-point" class="catalog-point" aria-live="polite"></div>
+      <div id="catalog-orders"></div>
+    </section>
+
+    <footer class="site-footer">
+      <div><strong>Источники и проверка</strong><p>Маршруты проверены 21–22 ноября 2026 года. Дата цен указана отдельно. Прогресс персонажей хранится в этом браузере.</p><p class="release-links"><a id="download-portable" href="downloads/Azeroth-Commerce-Authority-Windows.zip" hidden>Скачать автономную версию</a><a id="open-published" target="_blank" rel="noopener noreferrer" hidden>Открыть сайт</a></p></div>
+      <div class="source-links"><a href="https://www.wowhead.com/forever/guide/professions/craftsmans-writs-overview-recipes-rewards" target="_blank" rel="noopener noreferrer">Гайд и обсуждения Wowhead</a><a href="https://github.com/emsw0rth/craftmanshelper/tree/main/CraftmansHelper/Data" target="_blank" rel="noopener noreferrer">Координаты и переходы Forever</a><a href="https://metabot.gg/en/wow-forever/map" target="_blank" rel="noopener noreferrer">Карты материков</a><a href="https://github.com/AidVir/wow-forever-favor" target="_blank" rel="noopener noreferrer">Снимок цен аукциона</a></div>
+    </footer>
+  </main>
+
+  <div id="loading" class="loading">Загружаю заказы и карты…</div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="copy-dialog" aria-labelledby="copy-title">
+    <form method="dialog">
+      <h2 id="copy-title">Текст для копирования</h2>
+      <p class="section-description">Браузер не разрешил автоматическое копирование. Текст выделен — нажми Ctrl+C (на Mac — ⌘C).</p>
+      <textarea id="copy-text" aria-label="Текст для копирования" rows="10" readonly></textarea>
+      <div class="dialog-actions"><button class="button primary">Закрыть</button></div>
+    </form>
+  </dialog>
+  <dialog id="reputation-dialog">
+    <form id="reputation-form">
+      <h2 id="profile-dialog-title">Настройки персонажа</h2>
+      <p class="section-description">Укажи репутацию из игры. Уже отмеченные сдачи сохранятся и не будут начислены повторно.</p>
+      <label class="field">Имя персонажа<input id="profile-name" type="text" maxlength="60" required autocomplete="off"></label>
+      <label class="field">Отношение<select id="reputation-rank"><option value="0">Нейтрально — Neutral</option><option value="3000">Дружелюбие — Friendly</option><option value="9000">Уважение — Honored</option><option value="21000">Почтение — Revered</option><option value="42000">Превознесение — Exalted</option></select></label>
+      <label class="field">Очки внутри текущего уровня<input type="number" id="reputation-points" min="0" step="1" required></label>
+      <label class="field">Цель<select id="reputation-goal"><option value="3000">Дружелюбие — Friendly</option><option value="9000">Уважение — Honored</option><option value="21000">Почтение — Revered</option><option value="42000">Превознесение — Exalted</option></select></label>
+      <p id="profile-form-error" class="form-error" role="alert" hidden></p>
+      <div class="dialog-actions"><button type="button" class="button secondary" id="cancel-reputation">Отмена</button><button type="submit" class="button primary">Сохранить</button></div>
+    </form>
+  </dialog>
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title"><form method="dialog"><h2 id="confirm-title"></h2><p id="confirm-message" class="confirm-message"></p><div class="dialog-actions"><button value="cancel" class="button secondary">Отмена</button><button id="confirm-action" value="confirm" class="button primary">Подтвердить</button></div></form></dialog>
+</body>
+</html>

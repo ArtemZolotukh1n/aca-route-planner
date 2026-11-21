@@ -1,0 +1,14 @@
+/portable/
+/*.zip
+/dist/downloads/
+/screenshots/
+/snapshots/
+/*.png
+/*.jpg
+/*.jpeg
+/*.webp
+.DS_Store
+__pycache__/
+*.py[cod]
+.cache/
+/node_modules/

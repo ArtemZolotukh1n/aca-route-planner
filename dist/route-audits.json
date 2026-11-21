@@ -1,0 +1,179 @@
+{
+  "north": {
+    "verdict": "Для Альянса это связный круг от Стальгорна: Menethil → Thandol Span → Arathi → западный вход Hillsbrad → обязательный восточный подъезд в Alterac → южный проход в Alterac → Southshore. Время по дорогам целиком не измерено, поэтому это проверенный связный маршрут, а не доказанный абсолютный минимум минут.",
+    "path": "Kixxle → Muggol → Alyce → Gorgrash → Kris Legace → Bath’rah → Sos’mol → Alan Sneeks → Webbed Mudsnout Gnoll. После Kixxle не возвращайся на юг к Menethil только ради FP: пересеки мост Thandol Span в Arathi.",
+    "terrain": "К Bath’rah из Hillsbrad едь через восточную тропу. Затем возвращайся тем же переходом в предгорья и только оттуда входи в Alterac через южный проход. Прямая линия Bath’rah → Sos’mol пересекла бы хребет. После Alan вернись через южный проход к Webbed Mudsnout Gnoll, затем в Southshore и грифоном в Стальгорн.",
+    "economy": "Закупай набор для выбранных остановок до выезда, чтобы не возвращаться к аукциону посреди круга. Текущая оценка учитывает writ и готовый предмет, но не перелёты; вещи из сумок и собственный крафт меняют фактические расходы. Возврат Coin Pouch случаен.",
+    "playerAdvice": [
+      "На Reddit игрок советует брать по два комплекта заказа и предмета для повторения после ежедневного обновления и перечисляет Kixxle, Arathi, Gorgrash и Riverglades. Это практический опыт одного игрока, а не замер стоимости или времени.",
+      "В комментариях Wowhead обсуждают быстрый северный круг с группировкой заказов по NPC. Порядок с двумя проходами через Alterac — проверка географии этого маршрута, а не готовый GPS-трек из комментария."
+    ],
+    "cautions": [
+      "Точки переходов и порядок по зонам подтверждены; линии внутри зоны схематичны и не повторяют каждую дорогу.",
+      "Бонус Diplomacy для человека не учитывается: для WoW Forever его нельзя автоматически переносить из других версий."
+    ],
+    "sources": [
+      {
+        "title": "Wowhead Forever: список заказов и комментарии",
+        "url": "https://www.wowhead.com/forever/guide/professions/craftsmans-writs-overview-recipes-rewards"
+      },
+      {
+        "title": "Reddit: советы по закупке и ежедневному кругу",
+        "url": "https://www.reddit.com/r/wowforever/comments/1xwbt3i/azeroth_commerce_authority_is_fine/"
+      },
+      {
+        "title": "Переходы между зонами, данные аддона",
+        "url": "https://raw.githubusercontent.com/emsw0rth/craftmanshelper/main/CraftmansHelper/Data/Crossings.lua"
+      },
+      {
+        "title": "Точки полёта и маршруты транспорта Forever",
+        "url": "https://raw.githubusercontent.com/emsw0rth/craftmanshelper/main/CraftmansHelper/Data/FlightLengths.lua"
+      }
+    ]
+  },
+  "south": {
+    "verdict": "Базовый круг начинается из Stormwind полётом в Sentinel Hill, затем проходит западный Duskwood, Deadwind Pass, Swamp of Sorrows и Blasted Lands, заканчиваясь рейсом из Nethergarde. Sentinel Hill ставит тебя ближе к Raven Hill, чем Darkshire; найденные источники подтверждают FP, но не дают замера минут всего круга.",
+    "path": "Battered Trunk → Kzixx → Calliard → Hastings → Bullets Bigblast → Mukomonji → Kum’isha. Trunk находится внутри склепа Raven Hill. В Swamp обходи Stonard с севера; точки обхода на общей карте ориентировочные, не точная трасса. Между зонами используй отмеченные мосты и проходы.",
+    "terrain": "Опция STV добавляет пять заказов и 375 репутации: начинай полётом в Booty Bay, сдай Scooty, MacKinley и Narkk, затем Short John Mithril и Hekshi, после чего выезжай через северный выход в Duskwood. Spek в Riverglades принимает пять заказов (+625). При открытой Morgan’s Vigil лети Nethergarde → Morgan’s Vigil → Farholde; по данным рейсовой таблицы это два перелёта и около 10,378 воздушных ярдов. Запасной путь через Stormwind и Lakeshire — три перелёта и около 13,147 ярдов. Ярды не равны минутам.",
+    "economy": "Сравнивай базу и дополнительные ветки по текущему снимку. STV меняет начало поездки, а Riverglades добавляет отдельный выезд после Nethergarde: добавочная репутация требует не только покупки заказов, но и дороги. Перелёты в оценку закупки не входят; возврат Coin Pouch случаен.",
+    "playerAdvice": [
+      "Комментарий Wowhead предлагает направление STV → Duskwood → Deadwind → Swamp → Riverglades. Он поддерживает связность зон, но не доказывает, что весь круг или экономическая часть оптимальны.",
+      "На Reddit есть отдельные рассказы о сдаче заказов в Duskwood и советы сгруппировать writs по NPC. Один пост о смерти от стражей написан игроком Орды; его опасность не переносится на паладина Альянса."
+    ],
+    "cautions": [
+      "Riverglades — отдельный выезд, а не бесплатное продолжение от Nethergarde; добавляй его ради 625 репутации одним лагерем, если стоимость предметов приемлема.",
+      "Tuxedo Jacket, Shadow Protection Potion и Draught of Detect Demon проверь по цене отдельно. Не покупай их только потому, что они входят в полный список.",
+      "Цены — стоимость покупки writ и предмета по снимку рынка. Они не учитывают предметы уже в сумках, самодельный крафт, дорогу или изменение аукциона."
+    ],
+    "sources": [
+      {
+        "title": "Wowhead Forever: список заказов и обсуждение маршрутов",
+        "url": "https://www.wowhead.com/forever/guide/professions/craftsmans-writs-overview-recipes-rewards"
+      },
+      {
+        "title": "Wowhead Forever: полёты и паромы",
+        "url": "https://www.wowhead.com/forever/guide/flight-points-zeppelins-and-ships"
+      },
+      {
+        "title": "Forever: Blasted Lands и рейсы из Nethergarde",
+        "url": "https://foreverwow.com/zones/blasted-lands/"
+      },
+      {
+        "title": "Forever: Morgan’s Vigil",
+        "url": "https://foreverwow.com/zones/burning-steppes/"
+      },
+      {
+        "title": "Forever: Riverglades и переправа из Tanaris",
+        "url": "https://www.wowhead.com/forever/guide/riverglades-zone-overview"
+      },
+      {
+        "title": "Reddit: рассказ о сдаче в Duskwood (автор — Орда)",
+        "url": "https://www.reddit.com/r/wowforever/comments/1xvfoaa/went_to_duskwood_with_a_delivery_and_all_i_got/"
+      }
+    ]
+  },
+  "kalimdor-south": {
+    "verdict": "Перепроверено 22.11.2026. Четыре заказа в Marshal’s Refuge входят в основной маршрут: все получатели рядом с полёткой Gryfe. Раньше они были неудачно объединены с Torwa и Silithus в одну выключенную ветку. Dustwallow сохранён и включён по умолчанию, но теперь его можно пропустить на отдельный заход. Это выбор меньшего наземного пробега, а не доказанный минимум общего времени с перелётами.",
+    "path": "Gadgetzan → перелёт к Gryfe в Marshal’s Refuge → Gibbert, Spark, Petra и Nergal → перелёт обратно в Gadgetzan → Mirage Raceway → западная долина Thousand Needles → Scout Raroul в восточном Feralas → Thalanaar. С включённым Dustwallow далее лети в Theramore, объедь The Ravenous → Tabetha → Mudcrush → Ugbert и вернись через Theramore в Gadgetzan. Если блок выключен, из Thalanaar лети сразу в Gadgetzan.",
+    "terrain": "Четыре сдачи Un’Goro находятся в лагере около 43–44, 7–8, Gryfe — 45.2, 5.8. Отдельный Torwa (+125) стоит на юго-востоке 71.6, 76.0: при его включении вместо рейса Gadgetzan → Gryfe используй спуск из Tanaris и затем двигайся к северному лагерю. Silithus (+400) — независимое продолжение из лагеря через западный проход к Jarund и Khur с вылетом из Cenarion Hold в Gadgetzan. Ortell (+200) добавляет дальний заезд к пещере и возврат в Cenarion Hold. Yeh’kinya (+125) — отдельная поездка к Steamwheedle Port. Great Lift, Freewind Post и ордынские FP здесь не используются.",
+    "economy": "Четыре сдачи у Marshal’s Refuge сгруппированы возле полётки; Dustwallow добавляет длинный наземный круг. Сопоставляй стоимость выбранных веток по текущему снимку с готовностью ехать этот участок. Оценка закупки не включает перелёты и не вычитает предметы из сумок; возврат Coin Pouch случаен.",
+    "playerAdvice": [
+      "В комментариях Wowhead Un’Goro выделяют отдельной группой. Карточки Forever подтверждают четыре соседние сдачи у лагеря и отдельного Torwa на юго-востоке; объединять их в обязательный проезд через кратер не нужно.",
+      "В найденных обсуждениях Reddit нет проверенного полного Alliance-круга с замерами этих участков. Приоритет лагеря основан на расположении получателей относительно FP; время перелётов и дороги целиком не измерялось."
+    ],
+    "cautions": [
+      "Для короткого захода в Un’Goro оставь Torwa выключенным: четыре сдачи у Gryfe доступны без пересечения всего кратера и без Silithus.",
+      "Пять заказов Dustwallow принимают четыре получателя, разбросанные по зоне. Отключение блока убирает его только из текущей поездки; задания остаются доступными в маршруте и каталоге.",
+      "Truesilver Rod в Gadgetzan даёт 125 репутации — проверь текущую цену пары writ+предмет перед закупкой.",
+      "Goblin Rocket Fuel сдаётся Alchemist Pestlezugg в Tanaris; Steel Weapon Chain — Ugbert в Dustwallow Marsh.",
+      "Цены на аукционе Альянса и в нейтральном Gadgetzan различаются. Материалы из собственных запасов не считаются бесплатными."
+    ],
+    "sources": [
+      {
+        "title": "Wowhead Forever: writs и комментарии по зонам",
+        "url": "https://www.wowhead.com/forever/guide/professions/craftsmans-writs-overview-recipes-rewards"
+      },
+      {
+        "title": "Forever DB: Truesilver Rod → Gadgetzan",
+        "url": "https://db.icy-veins.com/wow-forever/quests/94277"
+      },
+      {
+        "title": "Forever DB: Goblin Rocket Fuel → Tanaris",
+        "url": "https://db.icy-veins.com/wow-forever/quests/94265"
+      },
+      {
+        "title": "Forever DB: Steel Weapon Chain → Dustwallow",
+        "url": "https://db.icy-veins.com/wow-forever/quests/94270"
+      },
+      {
+        "title": "Переходы между зонами Forever",
+        "url": "https://raw.githubusercontent.com/emsw0rth/craftmanshelper/main/CraftmansHelper/Data/Crossings.lua"
+      },
+      {
+        "title": "Forever DB: Dark Iron Bomb → Gibbert",
+        "url": "https://db.icy-veins.com/wow-forever/quests/94291"
+      },
+      {
+        "title": "Forever DB: Wildvine Potion → Spark",
+        "url": "https://db.icy-veins.com/wow-forever/quests/94267"
+      },
+      {
+        "title": "Forever DB: Thick Leather Ammo Pouch → Nergal",
+        "url": "https://db.icy-veins.com/wow-forever/quests/94303"
+      },
+      {
+        "title": "Forever DB: Earthen Silk Belt → Petra",
+        "url": "https://db.icy-veins.com/wow-forever/quests/94315"
+      },
+      {
+        "title": "Forever DB: Heavy Mithril Axe → Torwa",
+        "url": "https://db.icy-veins.com/wow-forever/quests/94279"
+      },
+      {
+        "title": "Рейсы Forever: FlightLengths.lua",
+        "url": "https://raw.githubusercontent.com/emsw0rth/craftmanshelper/main/CraftmansHelper/Data/FlightLengths.lua"
+      }
+    ]
+  },
+  "kalimdor-north": {
+    "verdict": "Основной маршрут идёт из Rut’theran через Auberdine и Astranaar в Ashenvale, затем на юг Felwood, после пяти сдач — верхом на север к Talonbranch, оттуда обычным Alliance FP к Sindrayl в Moonglade. Emerald Sanctuary не имеет подтверждённого FP; маршрут не пытается улететь прямо из лагеря.",
+    "path": "Основные остановки: четыре группы Ashenvale, пять NPC в Emerald Sanctuary, Impsy по северной дороге Felwood, четыре получателя Moonglade. Impsy добавлен к основному кругу: он далеко от лагеря, но расположен по пути на север к Talonbranch. Это 16 заказов / 1,750 репутации.",
+    "terrain": "Ziz Fizziks в Stonetalon (+375 за пять Journeyman) — ответвление перед Ashenvale через Talondeep Path, затем возвращение тем же проходом. Everlook (+400 за два Artisan) включай только если готов ехать от Talonbranch в Everlook и после этого возвращаться в Moonglade. Если Sindrayl ещё не открыт, первый наземный проход через Timbermaw зависит от репутации; ежедневный круг с открытым FP через туннель не идёт.",
+    "economy": "Сравнивай текущую стоимость базы и веток отдельно: Ziz требует возвращения через Talondeep Path, а Everlook — отклонения от пути Talonbranch → Moonglade. Оценка закупки не включает перелёты и не заменяет проверку предметов в сумках или стоимости собственного крафта. Возврат Coin Pouch случаен.",
+    "playerAdvice": [
+      "В комментариях Wowhead авторы советуют группировать заказы по зонам: пять заказов Felwood и пять в Moonglade экономят повторные заходы в одни и те же лагеря. Это совпадает с порядком сдач.",
+      "Готового проверенного Reddit-маршрута для Альянса из Teldrassil не нашёл. Добавка Impsy — вывод по расположению NPC относительно дороги к Talonbranch, не рекомендация из комментария."
+    ],
+    "cautions": [
+      "Для паладина используй Sindrayl (обычный FP Альянса), не друидский бесплатный рейс из Nighthaven.",
+      "Не рассчитывай на Timbermaw-переход без нужной репутации, если Sindrayl ещё не открыт.",
+      "Перед закупкой Ornate Mithril Shoulders проверь текущую цену пары writ+предмет или используй вещь из сумок/собственного крафта."
+    ],
+    "sources": [
+      {
+        "title": "Wowhead Forever: список и комментарии к кругам",
+        "url": "https://www.wowhead.com/forever/guide/professions/craftsmans-writs-overview-recipes-rewards"
+      },
+      {
+        "title": "Wowhead Forever: полёты и транспорт",
+        "url": "https://www.wowhead.com/forever/guide/flight-points-zeppelins-and-ships"
+      },
+      {
+        "title": "Forever: репутация Timbermaw и проходы",
+        "url": "https://www.wowhead.com/forever/guide/reputation/timbermaw-hold-quests-quartermaster-rewards"
+      },
+      {
+        "title": "Переходы Talondeep и маршруты зон",
+        "url": "https://raw.githubusercontent.com/emsw0rth/craftmanshelper/main/CraftmansHelper/Data/Crossings.lua"
+      },
+      {
+        "title": "Замеры прямых рейсов",
+        "url": "https://raw.githubusercontent.com/emsw0rth/craftmanshelper/main/CraftmansHelper/Data/FlightLengths.lua"
+      }
+    ]
+  },
+  "xlsx": {
+    "summary": "Сверил Excel друга, составленный 16 ноября: в нём 152 строки с двумя повторяющимися названиями (Goblin Rocket Fuel для Alchemy/Engineering и Gordok Ogre Suit для Leatherworking/Tailoring), то есть 150 уникальных writs. Все 150 уже есть в локальном каталоге. Таблица не добавила новых квестов, координат и цен; количества предметов также не указаны.",
+    "conflict": "Строка Expert Mana Potion в Excel и в старой таблице Wowhead указывает Ashenvale, но квест 94262 заканчивается у Spek в Riverglades (76.9, 54.1). Не путай его с другим заказом, Lesser Mana Potion, который действительно сдаётся Ash’alari в Ashenvale."
+  }
+}
