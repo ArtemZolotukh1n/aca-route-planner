@@ -68,12 +68,41 @@
       if (total !== expected || (expected !== null && !positiveInteger(expected))) invalid();
       pairs[quest] = [...pair];
     }
-    return { source: raw.source, meta: marketMeta(snapshot, sourceUpdated), pairs };
+    const result = { source: raw.source, meta: marketMeta(snapshot, sourceUpdated), pairs };
+    if (Object.hasOwn(raw, 'items')) {
+      if (!object(raw.items)) invalid();
+      result.items = {};
+      for (const [id, levels] of Object.entries(raw.items)) {
+        if (!/^[1-9]\d*$/.test(id) || !positiveInteger(Number(id))) invalid();
+        validateLevels(levels);
+        result.items[id] = copyLevels(levels);
+      }
+    }
+    return result;
   }
 
   function validateLevels(levels) {
     if (!Array.isArray(levels) || !levels.every(level => Array.isArray(level) &&
         level.length === 2 && positiveInteger(level[0]) && positiveInteger(level[1]))) invalid();
+  }
+
+  function copyLevels(levels) {
+    return levels.map(level => [...level]).sort((a, b) => a[0] - b[0]);
+  }
+
+  function hasItems(snapshot, itemIds) {
+    if (!Array.isArray(itemIds) || !itemIds.every(positiveInteger)) return false;
+    if (!itemIds.length) return true;
+    if (!object(snapshot?.items)) return false;
+    try {
+      for (const id of itemIds) {
+        if (!Object.hasOwn(snapshot.items, id)) return false;
+        validateLevels(snapshot.items[id]);
+      }
+      return true;
+    } catch {
+      return false;
+    }
   }
 
   function buyCost(levels, count) {
@@ -92,11 +121,12 @@
     return null;
   }
 
-  function fromFeed(feed, writs) {
+  function fromFeed(feed, writs, { itemIds = [] } = {}) {
     if (!object(feed) || feed.region !== 'EU' || feed.ruleset?.id !== 1 ||
         !object(feed.factions) || !object(feed.factions.alliance)) invalid();
     const house = feed.factions.alliance;
-    if (house.house?.id !== 110 || !object(house.items) || !Array.isArray(writs)) invalid();
+    if (house.house?.id !== 110 || !object(house.items) || !Array.isArray(writs) ||
+        !Array.isArray(itemIds) || !itemIds.every(positiveInteger)) invalid();
     const sourceUpdated = isoDate(feed.updated);
     const snapshot = isoDate(house.lastModified, true);
     for (const [id, levels] of Object.entries(house.items)) {
@@ -113,29 +143,37 @@
       if (total !== null && !positiveInteger(total)) invalid();
       pairs[writ.quest] = [writCost, itemCost, total];
     }
-    return { source: SOURCE_URL, meta: marketMeta(snapshot, sourceUpdated), pairs };
+    const result = { source: SOURCE_URL, meta: marketMeta(snapshot, sourceUpdated), pairs };
+    if (itemIds.length) {
+      result.items = {};
+      for (const id of itemIds) result.items[id] = copyLevels(house.items[id] || []);
+    }
+    return result;
   }
 
-  function chooseSnapshot(embedded, cached) {
+  function chooseSnapshot(embedded, cached, { itemIds = [] } = {}) {
     const baseline = normalizeSnapshot(embedded);
     try {
       const candidate = normalizeSnapshot(cached);
       const quests = Object.keys(baseline.pairs);
       if (Object.keys(candidate.pairs).length !== quests.length ||
           !quests.every(quest => Object.hasOwn(candidate.pairs, quest))) return baseline;
-      return Date.parse(candidate.meta.snapshot) > Date.parse(baseline.meta.snapshot) ? candidate : baseline;
+      const newer = Date.parse(candidate.meta.snapshot) > Date.parse(baseline.meta.snapshot);
+      const equal = candidate.meta.snapshot === baseline.meta.snapshot;
+      return newer || (equal && hasItems(candidate, itemIds) && !hasItems(baseline, itemIds)) ? candidate : baseline;
     } catch {
       return baseline;
     }
   }
 
-  function shouldAutoRefresh(snapshot, lastCheckedAt, now = Date.now()) {
+  function shouldAutoRefresh(snapshot, lastCheckedAt, now = Date.now(), { itemIds = [] } = {}) {
+    if (itemIds.length && !hasItems(snapshot, itemIds)) return true;
     const snapshotTime = Date.parse(isoDate(snapshot.meta.snapshot));
     const checked = typeof lastCheckedAt === 'number' && Number.isFinite(lastCheckedAt) ? lastCheckedAt : 0;
     return Number.isFinite(now) && now - snapshotTime > HOUR && now - checked > CHECK_INTERVAL;
   }
 
-  async function fetchLatest(writs, { signal } = {}) {
+  async function fetchLatest(writs, { signal, itemIds = [] } = {}) {
     const controller = new AbortController();
     const abort = () => controller.abort(signal.reason);
     if (signal?.aborted) controller.abort(signal.reason);
@@ -146,12 +184,12 @@
         credentials: 'omit', cache: 'no-store', signal: controller.signal
       });
       if (!response.ok) throw new Error(`Источник цен вернул HTTP ${response.status}.`);
-      return fromFeed(await response.json(), writs);
+      return fromFeed(await response.json(), writs, { itemIds });
     } finally {
       clearTimeout(timeout);
       signal?.removeEventListener('abort', abort);
     }
   }
 
-  return Object.freeze({ SOURCE_URL, normalizeSnapshot, fromFeed, buyCost, fetchLatest, chooseSnapshot, shouldAutoRefresh });
+  return Object.freeze({ SOURCE_URL, normalizeSnapshot, fromFeed, buyCost, hasItems, fetchLatest, chooseSnapshot, shouldAutoRefresh });
 });

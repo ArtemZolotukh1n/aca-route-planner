@@ -4,12 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="Маршруты заказов Azeroth Commerce Authority в WoW Forever: карта, покупки и прогресс до Honored.">
+  <meta name="description" content="Azeroth Commerce Authority в WoW Forever: маршруты репутации и калькулятор Merchant’s Favor для рецептов по ценам EU PvP Alliance.">
   <title>ACA — торговые маршруты · WoW Forever</title>
   <link rel="stylesheet" href="styles.css">
   <script src="site-config.js" defer></script>
   <script src="planner-core.js" defer></script>
   <script src="prices.js" defer></script>
+  <script src="favor-core.js" defer></script>
+  <script src="favor-ui.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -52,6 +54,7 @@
       <nav class="tabs" aria-label="Разделы">
         <button type="button" data-view="route" aria-current="page">Маршрут</button>
         <button type="button" data-view="shopping">Покупки</button>
+        <button type="button" data-view="favor">Монеты и рецепты</button>
         <button type="button" data-view="catalog">Все заказы <span>150</span></button>
       </nav>
       <div class="round-control"><span id="round-status"></span><button type="button" class="button secondary" id="next-round">Следующий круг</button></div>
@@ -101,6 +104,33 @@
       <div id="catalog-map" class="game-map" role="group" aria-label="Карта получателей заказов"></div>
       <div id="catalog-point" class="catalog-point" aria-live="polite"></div>
       <div id="catalog-orders"></div>
+    </section>
+
+    <section id="favor-view" class="view" hidden aria-labelledby="favor-title">
+      <div class="section-heading"><div><p class="eyebrow">Merchant’s Favor · EU PvP Alliance</p><h2 id="favor-title">Монеты на нужные рецепты</h2></div><span class="favor-badge">Минимум затрат по снимку</span></div>
+      <p class="section-description">Выбери рецепты или желаемый баланс. Калькулятор сравнит пустые Waylaid Crates и все разрешённые варианты заполнения, учитывая количество товаров на аукционе.</p>
+      <form id="favor-settings" class="favor-settings" novalidate>
+        <label class="field">Текущий баланс Favor<input id="favor-balance" type="number" min="0" step="1" required placeholder="Укажи из игры" inputmode="numeric"></label>
+        <label class="field">Цель<select id="favor-mode"><option value="recipes">Корзина рецептов</option><option value="coins">Желаемый баланс</option></select></label>
+        <label id="favor-target-field" class="field" hidden>Желаемый баланс Favor<input id="favor-target" type="number" min="0" step="1" required inputmode="numeric"></label>
+        <label class="field">Уровень персонажа<input id="favor-level" type="number" min="1" max="60" step="1" required inputmode="numeric"></label>
+        <label class="field">Performance Bonus · Legacy<select id="favor-bonus"><option value="0">Без бонуса</option><option value="1">5% шанс удвоения</option><option value="2">10% шанс удвоения</option><option value="3">15% шанс удвоения</option></select></label>
+      </form>
+      <p id="favor-input-error" class="form-error" role="status" hidden></p>
+      <div class="favor-workspace">
+        <div class="favor-goal">
+          <section id="favor-basket-section" class="favor-panel" aria-labelledby="favor-basket-title"><div class="section-heading"><h3 id="favor-basket-title">Корзина рецептов</h3><button id="favor-clear" class="text-button" type="button">Очистить</button></div><div id="favor-basket"></div><p id="favor-reputation" class="muted"></p></section>
+          <section class="favor-panel" aria-labelledby="favor-plan-title"><div class="section-heading"><h3 id="favor-plan-title">План закупки</h3><button id="favor-copy" class="button secondary" type="button" disabled>Копировать список</button></div><div id="favor-result" aria-live="polite"></div><div id="favor-purchases"></div></section>
+        </div>
+        <section id="favor-recipes-section" class="favor-panel" aria-labelledby="favor-recipes-title">
+          <div class="section-heading"><h3 id="favor-recipes-title">Рецепты фракции</h3><span id="favor-recipe-count" class="muted"></span></div>
+          <div class="favor-filters"><label class="field">Профессия<select id="favor-profession"></select></label><label class="field">Поиск рецепта<input id="favor-search" type="search" placeholder="Enriched Thorium…" autocomplete="off"></label></div>
+          <div id="favor-recipes" class="favor-recipes"></div><button id="favor-more" class="button secondary" type="button" hidden>Показать ещё</button>
+          <p id="favor-catalog-date" class="muted"></p>
+        </section>
+      </div>
+      <details class="route-audit favor-comparison"><summary>Сравнить все ящики</summary><div id="favor-ranking"></div></details>
+      <details class="route-audit"><summary>Как считается стоимость и где сдавать</summary><div class="route-audit-content"><p>Расход = покупка пустого ящика + один выбранный комплект заполнения − подтверждённое серебро за сдачу. У Artisan возврат серебра пока не подтверждён и не вычитается. Обозначения цен: g — золото, s — серебро, c — медь.</p><p>План закрывает цель базовыми монетами. Случайное удвоение от Performance Bonus показано только в прогнозе. Разовые 50 Favor за первый Shipping Label автоматически не добавляются — внеси фактический баланс из игры.</p><p>Источник сохраняет уровни цен и количество единиц, но объединяет отдельные лоты. Выкуп целых стеков может потребовать больше золота. При исчерпании опубликованных товаров калькулятор не продолжает покупать по старой цене.</p><p>Закупись на аукционе Альянса и сдавай заполненные ящики Marcy Baker в Three Corners, Redridge Mountains, около 9.6, 70.9. Ящики можно сдавать повторно. Аукционер в самом лагере относится к нейтральному рынку, его цены в этот расчёт не входят.</p><p id="favor-sources"></p></div></details>
     </section>
 
     <footer class="site-footer">

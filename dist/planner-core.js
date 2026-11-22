@@ -8,6 +8,7 @@
   const REPUTATION = { JOURNEYMAN: 75, EXPERT: 125, ARTISAN: 200 };
   const GOALS = [3000, 9000, 21000, 42000];
   const CHECKS = ['writReady', 'itemReady', 'delivered'];
+  const PROFESSIONS = ['all', 'ALCHEMY', 'BLACKSMITHING', 'ENCHANTING', 'ENGINEERING', 'LEATHERWORKING', 'TAILORING', 'COOKING'];
   const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
   const own = (value, key) => Object.prototype.hasOwnProperty.call(value, key);
   const id = () => globalThis.crypto?.randomUUID?.() || `profile-${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`;
@@ -41,7 +42,8 @@
         return fallback;
       }
       const integer = Number.isSafeInteger;
-      const zone = value => integer(value) && value > 0;
+      const nonnegative = value => integer(value) && value >= 0;
+      const positiveInteger = value => integer(value) && value > 0;
       const text = value => typeof value === 'string';
       const boolean = value => typeof value === 'boolean';
       const profile = {
@@ -51,13 +53,19 @@
         bankedRep: field('bankedRep', 0, value => integer(value) && value >= 0),
         round: field('round', 1, value => integer(value) && value >= 1),
         goal: field('goal', 9000, value => GOALS.includes(value)),
+        favorBalance: field('favorBalance', null, value => value === null || nonnegative(value)),
+        favorGoalMode: field('favorGoalMode', 'recipes', value => ['recipes', 'coins'].includes(value)),
+        favorTarget: field('favorTarget', 0, nonnegative),
+        favorLevel: field('favorLevel', 60, value => integer(value) && value >= 1 && value <= 60),
+        favorBonusRank: field('favorBonusRank', 0, value => integer(value) && value >= 0 && value <= 3),
+        favorProfession: field('favorProfession', 'all', value => PROFESSIONS.includes(value)),
         reputationConfirmed: field('reputationConfirmed', false, boolean),
         needsReputationReview: field('needsReputationReview', false, boolean),
         southKalimdorRevision: field('southKalimdorRevision', 0, value => integer(value) && value >= 0),
-        view: field('view', 'route', value => ['route', 'shopping', 'catalog'].includes(value)),
+        view: field('view', 'route', value => ['route', 'shopping', 'catalog', 'favor'].includes(value)),
         routeId: field('routeId', firstRoute.id, text),
         mapMode: field('mapMode', 'overview', value => ['overview', 'zone'].includes(value)),
-        routeZone: field('routeZone', defaultZone, zone),
+        routeZone: field('routeZone', defaultZone, positiveInteger),
         selectedStop: field('selectedStop', String(defaultStop), text),
         catalogZone: field('catalogZone', '1437', text),
         query: field('query', '', text),
@@ -65,12 +73,15 @@
       };
       if (!byRoute.has(profile.routeId)) profile.routeId = firstRoute.id;
       if (!stops.has(profile.selectedStop)) profile.selectedStop = String(defaultStop);
-      if (!['all', 'unknown'].includes(profile.catalogZone)) profile.catalogZone = zone(Number(profile.catalogZone)) ? String(Number(profile.catalogZone)) : String(defaultZone);
+      if (!['all', 'unknown'].includes(profile.catalogZone)) profile.catalogZone = positiveInteger(Number(profile.catalogZone)) ? String(Number(profile.catalogZone)) : String(defaultZone);
       for (const key of CHECKS) {
         const values = field(key, [], Array.isArray);
         if (strict && !values.every(integer)) throw new Error(`Некорректные отметки профиля: ${key}.`);
         profile[key] = [...new Set(values)].filter(quest => integer(quest) && byQuest.has(quest));
       }
+      const recipeIds = field('favorRecipeIds', [], Array.isArray);
+      if (strict && !recipeIds.every(positiveInteger)) throw new Error('Некорректный список рецептов Merchant’s Favor.');
+      profile.favorRecipeIds = [...new Set(recipeIds)].filter(positiveInteger);
       const branches = field('branches', {}, object);
       for (const [routeId, values] of Object.entries(branches)) {
         if (strict && (!Array.isArray(values) || !values.every(text))) throw new Error(`Некорректные ветки маршрута: ${routeId}.`);

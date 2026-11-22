@@ -20,10 +20,18 @@ test('new profiles have independent marks and unknown reputation', () => {
   assert.notEqual(first.id, second.id);
   assert.equal(first.baseline, 0);
   assert.equal(first.goal, 9000);
+  assert.equal(first.favorBalance, null);
+  assert.equal(first.favorGoalMode, 'recipes');
+  assert.equal(first.favorTarget, 0);
+  assert.equal(first.favorLevel, 60);
+  assert.equal(first.favorBonusRank, 0);
+  assert.equal(first.favorProfession, 'all');
   assert.equal(core.totalRep(first), null);
   first.delivered.push(journeyman);
+  first.favorRecipeIds.push(123);
   first.branches['kalimdor-south'].push('silithus');
   assert.deepEqual(second.delivered, []);
+  assert.deepEqual(second.favorRecipeIds, []);
   assert.deepEqual(second.branches['kalimdor-south'], ['dustwallow']);
 });
 
@@ -95,6 +103,54 @@ test('backup round trip preserves profiles and original IDs without sharing arra
   assert.deepEqual(first.delivered, [artisan]);
   assert.deepEqual(backup.profiles[0].delivered, [artisan]);
   assert.equal(core.restoreStore(store, { version: 1 }).activeProfileId, second.id);
+});
+
+test('Favor settings survive backup round trips independently for each character', () => {
+  const profile = core.normalizeProfile({
+    name: 'Кузнец', view: 'favor', favorBalance: 0, favorGoalMode: 'coins', favorTarget: 1200,
+    favorRecipeIds: [101, 202, 101], favorLevel: 35, favorBonusRank: 3, favorProfession: 'BLACKSMITHING',
+  });
+  assert.deepEqual(profile.favorRecipeIds, [101, 202]);
+  const backup = core.exportBackup({ version: 2, profiles: [profile], activeProfileId: profile.id });
+  const restored = core.importBackup(backup).profiles[0];
+  assert.deepEqual(restored, profile);
+  restored.favorRecipeIds.push(303);
+  assert.deepEqual(profile.favorRecipeIds, [101, 202]);
+  assert.deepEqual(backup.profiles[0].favorRecipeIds, [101, 202]);
+});
+
+test('existing saves and backups without Favor fields receive defaults without losing progress', () => {
+  const old = { id: 'existing', name: 'Паладин', baseline: 2075, bankedRep: 500, delivered: [journeyman], reputationConfirmed: true, view: 'shopping' };
+  const store = core.restoreStore({ version: 2, profiles: [old], activeProfileId: old.id });
+  assert.equal(core.totalRep(store.profiles[0]), 2650);
+  assert.equal(store.profiles[0].view, 'shopping');
+  assert.equal(store.profiles[0].favorBalance, null);
+  const imported = core.importBackup({ format: 'aca-route-planner', version: 1, exportedAt: '2026-11-21T15:00:00Z', profiles: [old], activeProfileId: old.id });
+  assert.equal(core.totalRep(imported.profiles[0]), 2650);
+  assert.deepEqual(imported.profiles[0].favorRecipeIds, []);
+  const migrated = core.restoreStore(null, { version: 1, ...old }).profiles[0];
+  assert.equal(migrated.favorLevel, 60);
+  assert.equal(migrated.baseline, old.baseline);
+  assert.deepEqual(migrated.delivered, old.delivered);
+});
+
+test('strict import rejects invalid Favor settings and normalization preserves valid recipe IDs', () => {
+  const profile = core.createProfile();
+  const backup = core.exportBackup({ version: 2, profiles: [profile], activeProfileId: profile.id });
+  for (const [key, value] of [
+    ['favorBalance', -1], ['favorBalance', Infinity], ['favorBalance', '0'],
+    ['favorGoalMode', 'rep'], ['favorTarget', 1.5], ['favorTarget', NaN],
+    ['favorLevel', 0], ['favorLevel', 61], ['favorBonusRank', 4], ['favorBonusRank', '1'],
+    ['favorProfession', 'MINING'], ['favorProfession', 'alchemy'],
+    ['favorRecipeIds', null], ['favorRecipeIds', [0]], ['favorRecipeIds', [123, '202']],
+  ]) {
+    const input = structuredClone(backup);
+    input.profiles[0][key] = value;
+    assert.throws(() => core.importBackup(input), key);
+  }
+  const repaired = core.normalizeProfile({ favorRecipeIds: [123, null, -1, 202, 123], favorBalance: NaN });
+  assert.deepEqual(repaired.favorRecipeIds, [123, 202]);
+  assert.equal(repaired.favorBalance, null);
 });
 
 test('strict import rejects malformed fields and unsupported envelopes', () => {

@@ -95,6 +95,37 @@ test('snapshot normalization validates totals and regenerates all market labels'
   assert.deepEqual(prices.normalizeSnapshot(partial).pairs[94237], [4998, null, null]);
 });
 
+test('item books preserve exact price depth and empty stock without aliasing the input', () => {
+  const input = snapshot();
+  input.items = { 8069: [[5, 120], [3, 50], [4, 80]], 999: [] };
+  const result = prices.normalizeSnapshot(input);
+  assert.deepEqual(result.items, { 8069: [[3, 50], [4, 80], [5, 120]], 999: [] });
+  assert.equal(prices.buyCost(result.items[8069], 200), 820);
+  assert.equal(prices.buyCost(result.items[8069], 251), null);
+  result.items[8069][0][1] = 1;
+  assert.deepEqual(input.items[8069], [[5, 120], [3, 50], [4, 80]]);
+  assert.equal(Object.hasOwn(prices.normalizeSnapshot(snapshot()), 'items'), false);
+  for (const items of [null, [], { 0: [] }, { '01': [] }, { '9007199254740992': [] }, { 999: [[1, 0]] }, { 999: [[Infinity, 1]] }, { 999: [[1, 1, 1]] }]) {
+    assert.throws(() => prices.normalizeSnapshot({ ...snapshot(), items }));
+  }
+});
+
+test('a requested book distinguishes no listed stock from an unobserved item', () => {
+  const input = feed();
+  const before = structuredClone(input);
+  const result = prices.fromFeed(input, writs, { itemIds: [8069, 999, 8069] });
+  assert.deepEqual(result.items, { 8069: [[3, 50], [4, 80], [5, 120]], 999: [] });
+  assert.deepEqual(input, before);
+  assert.equal(prices.hasItems(result, [8069, 999]), true);
+  assert.equal(prices.hasItems(result, [8069, 1000]), false);
+  assert.equal(prices.hasItems(snapshot(), [8069]), false);
+  assert.equal(prices.hasItems(snapshot(), []), true);
+  assert.equal(prices.hasItems({ items: { 8069: [[NaN, 1]] } }, [8069]), false);
+  assert.equal(prices.hasItems({ items: Object.create({ 8069: [] }) }, [8069]), false);
+  assert.throws(() => prices.fromFeed(input, writs, { itemIds: [0] }));
+  assert.throws(() => prices.fromFeed(input, writs, { itemIds: ['8069'] }));
+});
+
 test('cached snapshot cannot replace embedded prices with older, equal or invalid data', () => {
   const embedded = snapshot();
   const older = snapshot('2026-11-21T14:00:00Z');
@@ -130,6 +161,34 @@ test('newer cache must contain the same quest set while complete null prices rem
   assert.equal(selected.meta.snapshot, '2026-11-21T16:00:00.000Z');
 });
 
+test('equal-date books upgrade old snapshots without downgrading a complete baseline', () => {
+  const embedded = snapshot();
+  const cached = snapshot();
+  cached.items = { 8069: [[4, 200]], 999: [] };
+  cached.pairs[94237] = [10, 800, 810];
+  const options = { itemIds: [8069, 999] };
+  assert.deepEqual(prices.chooseSnapshot(embedded, cached, options).items, cached.items);
+  const incomplete = snapshot();
+  incomplete.items = { 8069: [[1, 1]] };
+  assert.deepEqual(prices.chooseSnapshot(cached, incomplete, options).items, cached.items);
+  assert.deepEqual(prices.chooseSnapshot(cached, embedded, options).items, cached.items);
+  const invalid = snapshot('2026-11-21T16:00:00Z');
+  invalid.items = { 8069: [[0, 1]], 999: [] };
+  assert.deepEqual(prices.chooseSnapshot(cached, invalid, options).items, cached.items);
+});
+
+test('newer route prices remain usable without carrying an old item book across time', () => {
+  const embedded = snapshot();
+  embedded.items = { 8069: [[4, 200]], 999: [] };
+  const cached = snapshot('2026-11-21T16:00:00Z');
+  cached.pairs[94237] = [10, 800, 810];
+  const selected = prices.chooseSnapshot(embedded, cached, { itemIds: [8069, 999] });
+  assert.deepEqual(selected.pairs, cached.pairs);
+  assert.equal(Object.hasOwn(selected, 'items'), false);
+  const olderBook = { ...embedded, meta: { ...embedded.meta, snapshot: '2026-11-21T14:00:00Z' } };
+  assert.equal(Object.hasOwn(prices.chooseSnapshot(cached, olderBook, { itemIds: [8069, 999] }), 'items'), false);
+});
+
 test('auto refresh requires a snapshot older than one hour and a check older than 15 minutes', () => {
   const data = snapshot();
   const at = Date.parse(data.meta.snapshot);
@@ -142,18 +201,31 @@ test('auto refresh requires a snapshot older than one hour and a check older tha
   assert.equal(prices.shouldAutoRefresh(data, at + hour * 3, at + hour * 2), false);
 });
 
+test('the first item-book upgrade bypasses freshness and refresh throttling', () => {
+  const data = snapshot();
+  const now = Date.parse(data.meta.snapshot) + 1;
+  const options = { itemIds: [8069, 999] };
+  assert.equal(prices.shouldAutoRefresh(data, now, now, options), true);
+  data.items = { 8069: [] };
+  assert.equal(prices.shouldAutoRefresh(data, now, now, options), true);
+  data.items[999] = [];
+  assert.equal(prices.shouldAutoRefresh(data, now, now, options), false);
+});
+
 test('fetch uses only the fixed public URL with no credentials or cache', async t => {
   let received;
   t.mock.method(globalThis, 'fetch', async (url, options) => {
     received = { url, options };
     return { ok: true, json: async () => feed() };
   });
-  const result = await prices.fetchLatest(writs);
+  const result = await prices.fetchLatest(writs, { itemIds: [8069, 999] });
   assert.equal(received.url, prices.SOURCE_URL);
   assert.equal(received.options.credentials, 'omit');
   assert.equal(received.options.cache, 'no-store');
   assert.equal(received.options.signal.aborted, false);
   assert.equal(result.meta.snapshot, '2026-11-21T15:00:00.000Z');
+  assert.equal(prices.hasItems(result, [8069, 999]), true);
+  assert.deepEqual(result.items[999], []);
 });
 
 test('HTTP and JSON failures reject without returning a partial snapshot', async t => {

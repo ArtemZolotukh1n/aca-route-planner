@@ -30,8 +30,8 @@
   }
 
   try {
-    const files = ['data.json', 'maps.json', 'routes.json', 'geography.json', 'overview-maps.json', 'route-audits.json', 'prices.json'];
-    const [data, maps, routeData, geography, overviewMaps, audits, embeddedPrices] = await Promise.all(files.map(async name => {
+    const files = ['data.json', 'maps.json', 'routes.json', 'geography.json', 'overview-maps.json', 'route-audits.json', 'prices.json', 'favor-data.json'];
+    const [data, maps, routeData, geography, overviewMaps, audits, embeddedPrices, favorData] = await Promise.all(files.map(async name => {
       if (window.ACA_ASSETS) return window.ACA_ASSETS[name];
       const response = await fetch(name);
       if (!response.ok) throw new Error(`Не удалось загрузить ${name}`);
@@ -51,12 +51,18 @@
     const planner = window.ACAPlanner.createContext({ writs: data.writs, routes });
     const store = planner.restoreStore(readSaved(STORAGE_KEY), readSaved(LEGACY_KEY));
     let state = store.profiles.find(profile => profile.id === store.activeProfileId);
+    const favorItemIds = [...new Set(favorData.crates.flatMap(crate => [crate.id, ...crate.bundles.map(bundle => bundle.item)]))];
     const priceCache = readSaved(PRICE_KEY);
-    let prices = window.ACAPrices.chooseSnapshot(embeddedPrices, priceCache?.snapshot);
+    let prices = window.ACAPrices.chooseSnapshot(embeddedPrices, priceCache?.snapshot, { itemIds: favorItemIds });
     let lastCheckedAt = Number.isFinite(priceCache?.lastCheckedAt) && priceCache.lastCheckedAt <= Date.now() ? priceCache.lastCheckedAt : 0;
     let refreshingPrices = false;
     let priceStatus = '';
-    if (location.hash && ['route', 'shopping', 'catalog'].includes(location.hash.slice(1))) state.view = location.hash.slice(1);
+    if (location.hash && ['route', 'shopping', 'catalog', 'favor'].includes(location.hash.slice(1))) state.view = location.hash.slice(1);
+    const favorUI = window.ACAFavorUI.create({
+      root: $('#favor-view'), catalog: favorData, getProfile: () => state,
+      getPrices: () => prices, getReputation: () => planner.totalRep(state),
+      save: persist, copyText,
+    });
 
     function persist() {
       saveValue(STORAGE_KEY, store);
@@ -109,13 +115,14 @@
       priceStatus = 'Проверяю опубликованный снимок аукциона…';
       renderPriceStatus();
       try {
-        const next = await window.ACAPrices.fetchLatest(data.writs);
+        const next = await window.ACAPrices.fetchLatest(data.writs, { itemIds: favorItemIds });
         const difference = Date.parse(next.meta.snapshot) - Date.parse(prices.meta.snapshot);
         lastCheckedAt = Date.now();
-        if (difference > 0) {
+        const upgraded = difference === 0 && !window.ACAPrices.hasItems(prices, favorItemIds) && window.ACAPrices.hasItems(next, favorItemIds);
+        if (difference > 0 || upgraded) {
           prices = next;
           const available = data.writs.filter(writ => prices.pairs[writ.quest]?.[2] != null).length;
-          priceStatus = `Цены обновлены. Полная цена есть для ${available} из ${data.writs.length} заказов.`;
+          priceStatus = `Цены обновлены для заказов и ящиков. Полная цена есть для ${available} из ${data.writs.length} writs.`;
           renderAll();
         } else priceStatus = difference === 0 ? 'Новых данных пока нет: источник публикует снимки примерно раз в час.' : 'Источник вернул более старый снимок. Сохранил действующие цены.';
         saveValue(PRICE_KEY, { snapshot: prices, lastCheckedAt });
@@ -518,8 +525,11 @@
     }
 
     function showView(view) {
-      state.view = ['route', 'shopping', 'catalog'].includes(view) ? view : 'route';
-      for (const name of ['route', 'shopping', 'catalog']) $(`#${name}-view`).hidden = name !== state.view;
+      state.view = ['route', 'shopping', 'catalog', 'favor'].includes(view) ? view : 'route';
+      for (const name of ['route', 'shopping', 'catalog', 'favor']) $(`#${name}-view`).hidden = name !== state.view;
+      $('.progress-section').hidden = state.view === 'favor';
+      $('.route-toolbar').hidden = state.view === 'favor';
+      $('.round-control').hidden = state.view === 'favor';
       document.querySelectorAll('[data-view]').forEach(button => {
         if (button.dataset.view === state.view) button.setAttribute('aria-current', 'page');
         else button.removeAttribute('aria-current');
@@ -528,6 +538,7 @@
       if (state.view === 'route') renderRoute();
       if (state.view === 'shopping') { renderRouteOptions(); renderShopping(); }
       if (state.view === 'catalog') renderCatalog();
+      if (state.view === 'favor') favorUI.render();
       persist();
     }
 
@@ -741,8 +752,8 @@
       $('#open-published').hidden = false;
     }
     renderAll(); renderPriceStatus(); persist();
-    if (!state.reputationConfirmed) openProfile(state);
-    if (window.ACAPrices.shouldAutoRefresh(prices, lastCheckedAt)) refreshPrices();
+    if (!state.reputationConfirmed && state.view !== 'favor') openProfile(state);
+    if (window.ACAPrices.shouldAutoRefresh(prices, lastCheckedAt, Date.now(), { itemIds: favorItemIds })) refreshPrices();
   } catch (error) {
     $('#loading').textContent = 'Не удалось загрузить заказы, маршруты и карты. Обнови страницу или перезапусти локальный сайт.';
     console.error(error);

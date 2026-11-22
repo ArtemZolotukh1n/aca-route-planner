@@ -1,0 +1,5368 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-22",
+  "currency": {
+    "id": 3402,
+    "name": "Merchant's Favor"
+  },
+  "items": {
+    "765": "Silverleaf",
+    "785": "Mageroyal",
+    "2318": "Light Leather",
+    "2319": "Medium Leather",
+    "2447": "Peacebloom",
+    "2449": "Earthroot",
+    "2450": "Briarthorn",
+    "2453": "Bruiseweed",
+    "2589": "Linen Cloth",
+    "2592": "Wool Cloth",
+    "2770": "Copper Ore",
+    "2771": "Tin Ore",
+    "2772": "Iron Ore",
+    "2775": "Silver Ore",
+    "2776": "Gold Ore",
+    "2840": "Copper Bar",
+    "2841": "Bronze Bar",
+    "2842": "Silver Bar",
+    "2996": "Bolt of Linen Cloth",
+    "2997": "Bolt of Woolen Cloth",
+    "3355": "Wild Steelbloom",
+    "3356": "Kingsblood",
+    "3357": "Liferoot",
+    "3358": "Khadgar's Whisker",
+    "3369": "Grave Moss",
+    "3575": "Iron Bar",
+    "3576": "Tin Bar",
+    "3577": "Gold Bar",
+    "3818": "Fadeleaf",
+    "3819": "Wintersbite",
+    "3820": "Stranglekelp",
+    "3821": "Goldthorn",
+    "3858": "Mithril Ore",
+    "3859": "Steel Bar",
+    "3860": "Mithril Bar",
+    "4231": "Cured Light Hide",
+    "4233": "Cured Medium Hide",
+    "4234": "Heavy Leather",
+    "4236": "Cured Heavy Hide",
+    "4304": "Thick Leather",
+    "4305": "Bolt of Silk Cloth",
+    "4306": "Silk Cloth",
+    "4338": "Mageweave Cloth",
+    "4339": "Bolt of Mageweave",
+    "4359": "Handful of Copper Bolts",
+    "4361": "Copper Tube",
+    "4363": "Copper Modulator",
+    "4371": "Bronze Tube",
+    "4375": "Whirring Bronze Gizmo",
+    "4382": "Bronze Framework",
+    "4387": "Iron Strut",
+    "4625": "Firebloom",
+    "6037": "Truesilver Bar",
+    "7911": "Truesilver Ore",
+    "8170": "Rugged Leather",
+    "8172": "Cured Thick Hide",
+    "8831": "Purple Lotus",
+    "8836": "Arthas' Tears",
+    "8838": "Sungrass",
+    "8839": "Blindweed",
+    "8845": "Ghost Mushroom",
+    "8846": "Gromsblood",
+    "10558": "Gold Power Core",
+    "10559": "Mithril Tube",
+    "10560": "Unstable Trigger",
+    "10561": "Mithril Casing",
+    "10620": "Thorium Ore",
+    "10939": "Greater Magic Essence",
+    "10940": "Strange Dust",
+    "10978": "Small Glimmering Shard",
+    "11082": "Greater Astral Essence",
+    "11083": "Soul Dust",
+    "11084": "Large Glimmering Shard",
+    "11135": "Greater Mystic Essence",
+    "11137": "Vision Dust",
+    "11138": "Small Glowing Shard",
+    "11139": "Large Glowing Shard",
+    "11175": "Greater Nether Essence",
+    "11176": "Dream Dust",
+    "11177": "Small Radiant Shard",
+    "11178": "Large Radiant Shard",
+    "11370": "Dark Iron Ore",
+    "11371": "Dark Iron Bar",
+    "12359": "Thorium Bar",
+    "13463": "Dreamfoil",
+    "13464": "Golden Sansam",
+    "13465": "Mountain Silversage",
+    "13466": "Plaguebloom",
+    "13467": "Icecap",
+    "14047": "Runecloth",
+    "14048": "Bolt of Runecloth",
+    "14343": "Small Brilliant Shard",
+    "14344": "Large Brilliant Shard",
+    "15994": "Thorium Widget",
+    "16000": "Thorium Tube",
+    "18631": "Truesilver Transformer",
+    "248682": "Waylaid Crate: Apprentice Herbs",
+    "248683": "Waylaid Crate: Apprentice Ore",
+    "248684": "Waylaid Crate: Apprentice Textiles",
+    "248685": "Waylaid Crate: Apprentice Curiosities",
+    "248686": "Waylaid Crate: Journeyman Herbs",
+    "248687": "Waylaid Crate: Journeyman Ore",
+    "248688": "Waylaid Crate: Journeyman Textiles",
+    "248689": "Waylaid Crate: Journeyman Curiosities",
+    "248690": "Waylaid Crate: Earthly Expert Herbs",
+    "248691": "Waylaid Crate: Flowering Expert Herbs",
+    "248692": "Waylaid Crate: Expert Ore",
+    "248693": "Waylaid Crate: Expert Textiles",
+    "248694": "Waylaid Crate: Expert Curiosities",
+    "248695": "Waylaid Crate: Earthly Artisan Herbs",
+    "248696": "Waylaid Crate: Flowering Artisan Herbs",
+    "248697": "Waylaid Crate: Artisan Ore",
+    "248698": "Waylaid Crate: Artisan Textiles",
+    "248699": "Waylaid Crate: Artisan Curiosities",
+    "248702": "Waylaid Crate: Apprentice Fabrics",
+    "248703": "Waylaid Crate: Apprentice Ingots",
+    "248704": "Waylaid Crate: Apprentice Parts",
+    "248705": "Waylaid Crate: Journeyman Fabrics",
+    "248706": "Waylaid Crate: Journeyman Ingots",
+    "248707": "Waylaid Crate: Journeyman Parts",
+    "248708": "Waylaid Crate: Expert Fabrics",
+    "248709": "Waylaid Crate: Expert Ingots",
+    "248710": "Waylaid Crate: Expert Parts",
+    "248711": "Waylaid Crate: Artisan Fabrics",
+    "248712": "Waylaid Crate: Artisan Ingots",
+    "248713": "Waylaid Crate: Artisan Parts"
+  },
+  "crates": [
+    {
+      "id": 248682,
+      "name": "Waylaid Crate: Apprentice Herbs",
+      "tier": "APPRENTICE",
+      "level": 10,
+      "favor": 5,
+      "returnCopper": 250,
+      "quest": 91899,
+      "source": "https://db.icy-veins.com/wow-forever/items/248682",
+      "bundles": [
+        {
+          "item": 2447,
+          "count": 20
+        },
+        {
+          "item": 765,
+          "count": 20
+        },
+        {
+          "item": 2449,
+          "count": 10
+        },
+        {
+          "item": 785,
+          "count": 10
+        },
+        {
+          "item": 2450,
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 248686,
+      "name": "Waylaid Crate: Journeyman Herbs",
+      "tier": "JOURNEYMAN",
+      "level": 10,
+      "favor": 10,
+      "returnCopper": 500,
+      "quest": 91900,
+      "source": "https://db.icy-veins.com/wow-forever/items/248686",
+      "bundles": [
+        {
+          "item": 3820,
+          "count": 10
+        },
+        {
+          "item": 2453,
+          "count": 10
+        },
+        {
+          "item": 3355,
+          "count": 10
+        },
+        {
+          "item": 3369,
+          "count": 10
+        },
+        {
+          "item": 3356,
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 248690,
+      "name": "Waylaid Crate: Earthly Expert Herbs",
+      "tier": "EXPERT",
+      "level": 20,
+      "favor": 15,
+      "returnCopper": 750,
+      "quest": 91901,
+      "source": "https://db.icy-veins.com/wow-forever/items/248690",
+      "bundles": [
+        {
+          "item": 3357,
+          "count": 20
+        },
+        {
+          "item": 3818,
+          "count": 10
+        },
+        {
+          "item": 3821,
+          "count": 10
+        },
+        {
+          "item": 3358,
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 248691,
+      "name": "Waylaid Crate: Flowering Expert Herbs",
+      "tier": "EXPERT",
+      "level": 20,
+      "favor": 15,
+      "returnCopper": 750,
+      "quest": 91901,
+      "source": "https://db.icy-veins.com/wow-forever/items/248691",
+      "bundles": [
+        {
+          "item": 3819,
+          "count": 10
+        },
+        {
+          "item": 4625,
+          "count": 10
+        },
+        {
+          "item": 8831,
+          "count": 20
+        },
+        {
+          "item": 8836,
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 248695,
+      "name": "Waylaid Crate: Earthly Artisan Herbs",
+      "tier": "ARTISAN",
+      "level": 35,
+      "favor": 20,
+      "returnCopper": null,
+      "quest": 91902,
+      "source": "https://db.icy-veins.com/wow-forever/items/248695",
+      "bundles": [
+        {
+          "item": 13464,
+          "count": 10
+        },
+        {
+          "item": 8838,
+          "count": 20
+        },
+        {
+          "item": 8839,
+          "count": 10
+        },
+        {
+          "item": 8845,
+          "count": 10
+        },
+        {
+          "item": 8846,
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 248696,
+      "name": "Waylaid Crate: Flowering Artisan Herbs",
+      "tier": "ARTISAN",
+      "level": 35,
+      "favor": 20,
+      "returnCopper": null,
+      "quest": 91902,
+      "source": "https://db.icy-veins.com/wow-forever/items/248696",
+      "bundles": [
+        {
+          "item": 13463,
+          "count": 20
+        },
+        {
+          "item": 13465,
+          "count": 20
+        },
+        {
+          "item": 13466,
+          "count": 20
+        },
+        {
+          "item": 13467,
+          "count": 20
+        }
+      ]
+    },
+    {
+      "id": 248683,
+      "name": "Waylaid Crate: Apprentice Ore",
+      "tier": "APPRENTICE",
+      "level": 10,
+      "favor": 5,
+      "returnCopper": 250,
+      "quest": 91899,
+      "source": "https://db.icy-veins.com/wow-forever/items/248683",
+      "bundles": [
+        {
+          "item": 2770,
+          "count": 20
+        },
+        {
+          "item": 2771,
+          "count": 20
+        }
+      ]
+    },
+    {
+      "id": 248687,
+      "name": "Waylaid Crate: Journeyman Ore",
+      "tier": "JOURNEYMAN",
+      "level": 10,
+      "favor": 10,
+      "returnCopper": 500,
+      "quest": 91900,
+      "source": "https://db.icy-veins.com/wow-forever/items/248687",
+      "bundles": [
+        {
+          "item": 2775,
+          "count": 10
+        },
+        {
+          "item": 2772,
+          "count": 20
+        }
+      ]
+    },
+    {
+      "id": 248692,
+      "name": "Waylaid Crate: Expert Ore",
+      "tier": "EXPERT",
+      "level": 20,
+      "favor": 15,
+      "returnCopper": 750,
+      "quest": 91901,
+      "source": "https://db.icy-veins.com/wow-forever/items/248692",
+      "bundles": [
+        {
+          "item": 2776,
+          "count": 10
+        },
+        {
+          "item": 3858,
+          "count": 20
+        }
+      ]
+    },
+    {
+      "id": 248697,
+      "name": "Waylaid Crate: Artisan Ore",
+      "tier": "ARTISAN",
+      "level": 35,
+      "favor": 20,
+      "returnCopper": null,
+      "quest": 91902,
+      "source": "https://db.icy-veins.com/wow-forever/items/248697",
+      "bundles": [
+        {
+          "item": 7911,
+          "count": 10
+        },
+        {
+          "item": 10620,
+          "count": 20
+        },
+        {
+          "item": 11370,
+          "count": 20
+        }
+      ]
+    },
+    {
+      "id": 248684,
+      "name": "Waylaid Crate: Apprentice Textiles",
+      "tier": "APPRENTICE",
+      "level": 10,
+      "favor": 5,
+      "returnCopper": 250,
+      "quest": 91899,
+      "source": "https://db.icy-veins.com/wow-forever/items/248684",
+      "bundles": [
+        {
+          "item": 2589,
+          "count": 40
+        },
+        {
+          "item": 2318,
+          "count": 20
+        }
+      ]
+    },
+    {
+      "id": 248688,
+      "name": "Waylaid Crate: Journeyman Textiles",
+      "tier": "JOURNEYMAN",
+      "level": 10,
+      "favor": 10,
+      "returnCopper": 500,
+      "quest": 91900,
+      "source": "https://db.icy-veins.com/wow-forever/items/248688",
+      "bundles": [
+        {
+          "item": 2592,
+          "count": 20
+        },
+        {
+          "item": 4306,
+          "count": 40
+        },
+        {
+          "item": 2319,
+          "count": 20
+        }
+      ]
+    },
+    {
+      "id": 248693,
+      "name": "Waylaid Crate: Expert Textiles",
+      "tier": "EXPERT",
+      "level": 20,
+      "favor": 15,
+      "returnCopper": 750,
+      "quest": 91901,
+      "source": "https://db.icy-veins.com/wow-forever/items/248693",
+      "bundles": [
+        {
+          "item": 4338,
+          "count": 40
+        },
+        {
+          "item": 4234,
+          "count": 20
+        }
+      ]
+    },
+    {
+      "id": 248698,
+      "name": "Waylaid Crate: Artisan Textiles",
+      "tier": "ARTISAN",
+      "level": 35,
+      "favor": 20,
+      "returnCopper": null,
+      "quest": 91902,
+      "source": "https://db.icy-veins.com/wow-forever/items/248698",
+      "bundles": [
+        {
+          "item": 14047,
+          "count": 40
+        },
+        {
+          "item": 4304,
+          "count": 20
+        },
+        {
+          "item": 8170,
+          "count": 20
+        }
+      ]
+    },
+    {
+      "id": 248685,
+      "name": "Waylaid Crate: Apprentice Curiosities",
+      "tier": "APPRENTICE",
+      "level": 10,
+      "favor": 5,
+      "returnCopper": 250,
+      "quest": 91899,
+      "source": "https://db.icy-veins.com/wow-forever/items/248685",
+      "bundles": [
+        {
+          "item": 10940,
+          "count": 20
+        },
+        {
+          "item": 10939,
+          "count": 4
+        },
+        {
+          "item": 10978,
+          "count": 6
+        },
+        {
+          "item": 11084,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 248689,
+      "name": "Waylaid Crate: Journeyman Curiosities",
+      "tier": "JOURNEYMAN",
+      "level": 10,
+      "favor": 10,
+      "returnCopper": 500,
+      "quest": 91900,
+      "source": "https://db.icy-veins.com/wow-forever/items/248689",
+      "bundles": [
+        {
+          "item": 11083,
+          "count": 20
+        },
+        {
+          "item": 11082,
+          "count": 4
+        },
+        {
+          "item": 11138,
+          "count": 6
+        },
+        {
+          "item": 11139,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 248694,
+      "name": "Waylaid Crate: Expert Curiosities",
+      "tier": "EXPERT",
+      "level": 20,
+      "favor": 15,
+      "returnCopper": 750,
+      "quest": 91901,
+      "source": "https://db.icy-veins.com/wow-forever/items/248694",
+      "bundles": [
+        {
+          "item": 11137,
+          "count": 20
+        },
+        {
+          "item": 11135,
+          "count": 4
+        },
+        {
+          "item": 11177,
+          "count": 6
+        },
+        {
+          "item": 11178,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 248699,
+      "name": "Waylaid Crate: Artisan Curiosities",
+      "tier": "ARTISAN",
+      "level": 35,
+      "favor": 20,
+      "returnCopper": null,
+      "quest": 91902,
+      "source": "https://db.icy-veins.com/wow-forever/items/248699",
+      "bundles": [
+        {
+          "item": 11176,
+          "count": 20
+        },
+        {
+          "item": 11175,
+          "count": 4
+        },
+        {
+          "item": 14343,
+          "count": 6
+        },
+        {
+          "item": 14344,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 248702,
+      "name": "Waylaid Crate: Apprentice Fabrics",
+      "tier": "APPRENTICE",
+      "level": 10,
+      "favor": 10,
+      "returnCopper": 500,
+      "quest": 91904,
+      "source": "https://db.icy-veins.com/wow-forever/items/248702",
+      "bundles": [
+        {
+          "item": 4231,
+          "count": 2
+        },
+        {
+          "item": 2996,
+          "count": 20
+        }
+      ]
+    },
+    {
+      "id": 248705,
+      "name": "Waylaid Crate: Journeyman Fabrics",
+      "tier": "JOURNEYMAN",
+      "level": 10,
+      "favor": 20,
+      "returnCopper": 1000,
+      "quest": 91905,
+      "source": "https://db.icy-veins.com/wow-forever/items/248705",
+      "bundles": [
+        {
+          "item": 2997,
+          "count": 6
+        },
+        {
+          "item": 4305,
+          "count": 10
+        },
+        {
+          "item": 4233,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 248708,
+      "name": "Waylaid Crate: Expert Fabrics",
+      "tier": "EXPERT",
+      "level": 20,
+      "favor": 30,
+      "returnCopper": 1500,
+      "quest": 91906,
+      "source": "https://db.icy-veins.com/wow-forever/items/248708",
+      "bundles": [
+        {
+          "item": 4339,
+          "count": 8
+        },
+        {
+          "item": 4236,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 248711,
+      "name": "Waylaid Crate: Artisan Fabrics",
+      "tier": "ARTISAN",
+      "level": 35,
+      "favor": 40,
+      "returnCopper": null,
+      "quest": 91907,
+      "source": "https://db.icy-veins.com/wow-forever/items/248711",
+      "bundles": [
+        {
+          "item": 14048,
+          "count": 8
+        },
+        {
+          "item": 8172,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 248703,
+      "name": "Waylaid Crate: Apprentice Ingots",
+      "tier": "APPRENTICE",
+      "level": 10,
+      "favor": 10,
+      "returnCopper": 500,
+      "quest": 91904,
+      "source": "https://db.icy-veins.com/wow-forever/items/248703",
+      "bundles": [
+        {
+          "item": 2840,
+          "count": 20
+        },
+        {
+          "item": 3576,
+          "count": 20
+        },
+        {
+          "item": 2841,
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 248706,
+      "name": "Waylaid Crate: Journeyman Ingots",
+      "tier": "JOURNEYMAN",
+      "level": 10,
+      "favor": 20,
+      "returnCopper": 1000,
+      "quest": 91905,
+      "source": "https://db.icy-veins.com/wow-forever/items/248706",
+      "bundles": [
+        {
+          "item": 2842,
+          "count": 10
+        },
+        {
+          "item": 3575,
+          "count": 20
+        }
+      ]
+    },
+    {
+      "id": 248709,
+      "name": "Waylaid Crate: Expert Ingots",
+      "tier": "EXPERT",
+      "level": 20,
+      "favor": 30,
+      "returnCopper": 1500,
+      "quest": 91906,
+      "source": "https://db.icy-veins.com/wow-forever/items/248709",
+      "bundles": [
+        {
+          "item": 3860,
+          "count": 20
+        },
+        {
+          "item": 3859,
+          "count": 15
+        },
+        {
+          "item": 3577,
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": 248712,
+      "name": "Waylaid Crate: Artisan Ingots",
+      "tier": "ARTISAN",
+      "level": 35,
+      "favor": 40,
+      "returnCopper": null,
+      "quest": 91907,
+      "source": "https://db.icy-veins.com/wow-forever/items/248712",
+      "bundles": [
+        {
+          "item": 11371,
+          "count": 2
+        },
+        {
+          "item": 6037,
+          "count": 10
+        },
+        {
+          "item": 12359,
+          "count": 20
+        }
+      ]
+    },
+    {
+      "id": 248704,
+      "name": "Waylaid Crate: Apprentice Parts",
+      "tier": "APPRENTICE",
+      "level": 10,
+      "favor": 10,
+      "returnCopper": 500,
+      "quest": 91904,
+      "source": "https://db.icy-veins.com/wow-forever/items/248704",
+      "bundles": [
+        {
+          "item": 4359,
+          "count": 16
+        },
+        {
+          "item": 4361,
+          "count": 16
+        },
+        {
+          "item": 4363,
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 248707,
+      "name": "Waylaid Crate: Journeyman Parts",
+      "tier": "JOURNEYMAN",
+      "level": 10,
+      "favor": 20,
+      "returnCopper": 1000,
+      "quest": 91905,
+      "source": "https://db.icy-veins.com/wow-forever/items/248707",
+      "bundles": [
+        {
+          "item": 4371,
+          "count": 8
+        },
+        {
+          "item": 4375,
+          "count": 7
+        },
+        {
+          "item": 4382,
+          "count": 4
+        },
+        {
+          "item": 10558,
+          "count": 45
+        }
+      ]
+    },
+    {
+      "id": 248710,
+      "name": "Waylaid Crate: Expert Parts",
+      "tier": "EXPERT",
+      "level": 20,
+      "favor": 30,
+      "returnCopper": 1500,
+      "quest": 91906,
+      "source": "https://db.icy-veins.com/wow-forever/items/248710",
+      "bundles": [
+        {
+          "item": 4387,
+          "count": 8
+        },
+        {
+          "item": 10559,
+          "count": 5
+        },
+        {
+          "item": 10560,
+          "count": 12
+        },
+        {
+          "item": 10561,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 248713,
+      "name": "Waylaid Crate: Artisan Parts",
+      "tier": "ARTISAN",
+      "level": 35,
+      "favor": 40,
+      "returnCopper": null,
+      "quest": 91907,
+      "source": "https://db.icy-veins.com/wow-forever/items/248713",
+      "bundles": [
+        {
+          "item": 15994,
+          "count": 5
+        },
+        {
+          "item": 18631,
+          "count": 5
+        },
+        {
+          "item": 16000,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": 250364,
+      "name": "Recipe: Elixir of Cunning",
+      "profession": "ALCHEMY",
+      "skill": 275,
+      "reputation": 9000,
+      "cost": 180,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250364/recipe-elixir-of-cunning"
+    },
+    {
+      "id": 250365,
+      "name": "Recipe: Elixir of the Phalanx",
+      "profession": "ALCHEMY",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 180,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250365/recipe-elixir-of-the-phalanx"
+    },
+    {
+      "id": 250367,
+      "name": "Recipe: Lesser Cleric's Elixir",
+      "profession": "ALCHEMY",
+      "skill": 95,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250367/recipe-lesser-clerics-elixir"
+    },
+    {
+      "id": 250369,
+      "name": "Recipe: Greater Cleric's Elixir",
+      "profession": "ALCHEMY",
+      "skill": 195,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250369/recipe-greater-clerics-elixir"
+    },
+    {
+      "id": 250371,
+      "name": "Recipe: Elixir of Greater Fortitude",
+      "profession": "ALCHEMY",
+      "skill": 200,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250371/recipe-elixir-of-greater-fortitude"
+    },
+    {
+      "id": 250372,
+      "name": "Recipe: Elixir of Wicked Regeneration",
+      "profession": "ALCHEMY",
+      "skill": 285,
+      "reputation": 9000,
+      "cost": 180,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250372/recipe-elixir-of-wicked-regeneration"
+    },
+    {
+      "id": 250373,
+      "name": "Recipe: Elixir of the Owl",
+      "profession": "ALCHEMY",
+      "skill": 280,
+      "reputation": 9000,
+      "cost": 180,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250373/recipe-elixir-of-the-owl"
+    },
+    {
+      "id": 250374,
+      "name": "Recipe: Elixir of Sages",
+      "profession": "ALCHEMY",
+      "skill": 275,
+      "reputation": 9000,
+      "cost": 180,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250374/recipe-elixir-of-sages"
+    },
+    {
+      "id": 250376,
+      "name": "Recipe: Lesser Mageblood Elixir",
+      "profession": "ALCHEMY",
+      "skill": 75,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250376/recipe-lesser-mageblood-elixir"
+    },
+    {
+      "id": 250377,
+      "name": "Recipe: Greater Mageblood Elixir",
+      "profession": "ALCHEMY",
+      "skill": 175,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250377/recipe-greater-mageblood-elixir"
+    },
+    {
+      "id": 250378,
+      "name": "Recipe: Lesser Arcane Elixir",
+      "profession": "ALCHEMY",
+      "skill": 120,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250378/recipe-lesser-arcane-elixir"
+    },
+    {
+      "id": 250379,
+      "name": "Recipe: Elixir of Nature Power",
+      "profession": "ALCHEMY",
+      "skill": 285,
+      "reputation": 9000,
+      "cost": 180,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250379/recipe-elixir-of-nature-power"
+    },
+    {
+      "id": 250381,
+      "name": "Recipe: Elixir of Lesser Spirit",
+      "profession": "ALCHEMY",
+      "skill": 65,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250381/recipe-elixir-of-lesser-spirit"
+    },
+    {
+      "id": 250383,
+      "name": "Recipe: Elixir of Greater Spirit",
+      "profession": "ALCHEMY",
+      "skill": 165,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250383/recipe-elixir-of-greater-spirit"
+    },
+    {
+      "id": 250384,
+      "name": "Recipe: Elixir of the Whale",
+      "profession": "ALCHEMY",
+      "skill": 275,
+      "reputation": 9000,
+      "cost": 180,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250384/recipe-elixir-of-the-whale"
+    },
+    {
+      "id": 250386,
+      "name": "Recipe: Elixir of Ferocity",
+      "profession": "ALCHEMY",
+      "skill": 275,
+      "reputation": 9000,
+      "cost": 180,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250386/recipe-elixir-of-ferocity"
+    },
+    {
+      "id": 250387,
+      "name": "Recipe: Elixir of the Grizzly",
+      "profession": "ALCHEMY",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 240,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250387/recipe-elixir-of-the-grizzly"
+    },
+    {
+      "id": 250388,
+      "name": "Recipe: Elixir of Lesser Intellect",
+      "profession": "ALCHEMY",
+      "skill": 95,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250388/recipe-elixir-of-lesser-intellect"
+    },
+    {
+      "id": 250978,
+      "name": "Recipe: Spellblasting Potion",
+      "profession": "ALCHEMY",
+      "skill": 135,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250978/recipe-spellblasting-potion"
+    },
+    {
+      "id": 250981,
+      "name": "Recipe: Major Spellblasting Potion",
+      "profession": "ALCHEMY",
+      "skill": 285,
+      "reputation": 9000,
+      "cost": 180,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250981/recipe-major-spellblasting-potion"
+    },
+    {
+      "id": 250984,
+      "name": "Recipe: Frenzy Potion",
+      "profession": "ALCHEMY",
+      "skill": 140,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250984/recipe-frenzy-potion"
+    },
+    {
+      "id": 250987,
+      "name": "Recipe: Major Frenzy Potion",
+      "profession": "ALCHEMY",
+      "skill": 290,
+      "reputation": 9000,
+      "cost": 240,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250987/recipe-major-frenzy-potion"
+    },
+    {
+      "id": 250990,
+      "name": "Recipe: Mender's Potion",
+      "profession": "ALCHEMY",
+      "skill": 130,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250990/recipe-menders-potion"
+    },
+    {
+      "id": 250993,
+      "name": "Recipe: Major Mender's Potion",
+      "profession": "ALCHEMY",
+      "skill": 280,
+      "reputation": 9000,
+      "cost": 180,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250993/recipe-major-menders-potion"
+    },
+    {
+      "id": 250994,
+      "name": "Recipe: Potion of Venomous Blood",
+      "profession": "ALCHEMY",
+      "skill": 275,
+      "reputation": 9000,
+      "cost": 180,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250994/recipe-potion-of-venomous-blood"
+    },
+    {
+      "id": 250995,
+      "name": "Recipe: Caustic Smog Potion",
+      "profession": "ALCHEMY",
+      "skill": 265,
+      "reputation": 9000,
+      "cost": 180,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250995/recipe-caustic-smog-potion"
+    },
+    {
+      "id": 250997,
+      "name": "Recipe: Dragonfire Potion",
+      "profession": "ALCHEMY",
+      "skill": 245,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250997/recipe-dragonfire-potion"
+    },
+    {
+      "id": 250998,
+      "name": "Recipe: Potion of Elemental Purging",
+      "profession": "ALCHEMY",
+      "skill": 280,
+      "reputation": 9000,
+      "cost": 180,
+      "vendor": {
+        "id": 256729,
+        "name": "Nina Surefire"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=250998/recipe-potion-of-elemental-purging"
+    },
+    {
+      "id": 251355,
+      "name": "Plans: Veteran's Boots",
+      "profession": "BLACKSMITHING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251355/plans-veterans-boots"
+    },
+    {
+      "id": 251356,
+      "name": "Plans: Guard's Boots",
+      "profession": "BLACKSMITHING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251356/plans-guards-boots"
+    },
+    {
+      "id": 251357,
+      "name": "Plans: Protector's Boots",
+      "profession": "BLACKSMITHING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251357/plans-protectors-boots"
+    },
+    {
+      "id": 251358,
+      "name": "Plans: Acolyte's Boots",
+      "profession": "BLACKSMITHING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251358/plans-acolytes-boots"
+    },
+    {
+      "id": 251359,
+      "name": "Plans: Crusader's Boots",
+      "profession": "BLACKSMITHING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251359/plans-crusaders-boots"
+    },
+    {
+      "id": 251360,
+      "name": "Plans: Veteran's Gloves",
+      "profession": "BLACKSMITHING",
+      "skill": 80,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251360/plans-veterans-gloves"
+    },
+    {
+      "id": 251361,
+      "name": "Plans: Guard's Gloves",
+      "profession": "BLACKSMITHING",
+      "skill": 80,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251361/plans-guards-gloves"
+    },
+    {
+      "id": 251362,
+      "name": "Plans: Protector's Gloves",
+      "profession": "BLACKSMITHING",
+      "skill": 80,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251362/plans-protectors-gloves"
+    },
+    {
+      "id": 251363,
+      "name": "Plans: Acolyte's Gloves",
+      "profession": "BLACKSMITHING",
+      "skill": 80,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251363/plans-acolytes-gloves"
+    },
+    {
+      "id": 251364,
+      "name": "Plans: Crusader's Gloves",
+      "profession": "BLACKSMITHING",
+      "skill": 80,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251364/plans-crusaders-gloves"
+    },
+    {
+      "id": 251365,
+      "name": "Plans: Veteran's Chain Belt",
+      "profession": "BLACKSMITHING",
+      "skill": 45,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251365/plans-veterans-chain-belt"
+    },
+    {
+      "id": 251366,
+      "name": "Plans: Guard's Chain Belt",
+      "profession": "BLACKSMITHING",
+      "skill": 45,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251366/plans-guards-chain-belt"
+    },
+    {
+      "id": 251367,
+      "name": "Plans: Protector's Chain Belt",
+      "profession": "BLACKSMITHING",
+      "skill": 45,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251367/plans-protectors-chain-belt"
+    },
+    {
+      "id": 251368,
+      "name": "Plans: Acolyte's Chain Belt",
+      "profession": "BLACKSMITHING",
+      "skill": 45,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251368/plans-acolytes-chain-belt"
+    },
+    {
+      "id": 251369,
+      "name": "Plans: Crusader's Chain Belt",
+      "profession": "BLACKSMITHING",
+      "skill": 45,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251369/plans-crusaders-chain-belt"
+    },
+    {
+      "id": 251370,
+      "name": "Plans: Veteran's Silvered Chain Shirt",
+      "profession": "BLACKSMITHING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251370/plans-veterans-silvered-chain-shirt"
+    },
+    {
+      "id": 251371,
+      "name": "Plans: Guard's Silvered Chain Shirt",
+      "profession": "BLACKSMITHING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251371/plans-guards-silvered-chain-shirt"
+    },
+    {
+      "id": 251372,
+      "name": "Plans: Protector's Silvered Chain Shirt",
+      "profession": "BLACKSMITHING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251372/plans-protectors-silvered-chain-shirt"
+    },
+    {
+      "id": 251373,
+      "name": "Plans: Acolyte's Silvered Chain Shirt",
+      "profession": "BLACKSMITHING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251373/plans-acolytes-silvered-chain-shirt"
+    },
+    {
+      "id": 251374,
+      "name": "Plans: Crusader's Silvered Chain Shirt",
+      "profession": "BLACKSMITHING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251374/plans-crusaders-silvered-chain-shirt"
+    },
+    {
+      "id": 251375,
+      "name": "Plans: Veteran's Silvered Chain Leggings",
+      "profession": "BLACKSMITHING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251375/plans-veterans-silvered-chain-leggings"
+    },
+    {
+      "id": 251376,
+      "name": "Plans: Guard's Silvered Chain Leggings",
+      "profession": "BLACKSMITHING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251376/plans-guards-silvered-chain-leggings"
+    },
+    {
+      "id": 251377,
+      "name": "Plans: Protector's Silvered Chain Leggings",
+      "profession": "BLACKSMITHING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251377/plans-protectors-silvered-chain-leggings"
+    },
+    {
+      "id": 251378,
+      "name": "Plans: Acolyte's Silvered Chain Leggings",
+      "profession": "BLACKSMITHING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251378/plans-acolytes-silvered-chain-leggings"
+    },
+    {
+      "id": 251379,
+      "name": "Plans: Crusader's Silvered Chain Leggings",
+      "profession": "BLACKSMITHING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251379/plans-crusaders-silvered-chain-leggings"
+    },
+    {
+      "id": 251380,
+      "name": "Plans: Veteran's Silvered Chain Helm",
+      "profession": "BLACKSMITHING",
+      "skill": 95,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251380/plans-veterans-silvered-chain-helm"
+    },
+    {
+      "id": 251381,
+      "name": "Plans: Guard's Silvered Chain Helm",
+      "profession": "BLACKSMITHING",
+      "skill": 95,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251381/plans-guards-silvered-chain-helm"
+    },
+    {
+      "id": 251382,
+      "name": "Plans: Protector's Silvered Chain Helm",
+      "profession": "BLACKSMITHING",
+      "skill": 95,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251382/plans-protectors-silvered-chain-helm"
+    },
+    {
+      "id": 251383,
+      "name": "Plans: Acolyte's Silvered Chain Helm",
+      "profession": "BLACKSMITHING",
+      "skill": 95,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251383/plans-acolytes-silvered-chain-helm"
+    },
+    {
+      "id": 251384,
+      "name": "Plans: Crusader's Silvered Chain Helm",
+      "profession": "BLACKSMITHING",
+      "skill": 95,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251384/plans-crusaders-silvered-chain-helm"
+    },
+    {
+      "id": 251413,
+      "name": "Plans: Officer's Sabatons",
+      "profession": "BLACKSMITHING",
+      "skill": 240,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251413/plans-officers-sabatons"
+    },
+    {
+      "id": 251414,
+      "name": "Plans: Sentinel's Sabatons",
+      "profession": "BLACKSMITHING",
+      "skill": 240,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251414/plans-sentinels-sabatons"
+    },
+    {
+      "id": 251415,
+      "name": "Plans: Warder's Sabatons",
+      "profession": "BLACKSMITHING",
+      "skill": 240,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251415/plans-warders-sabatons"
+    },
+    {
+      "id": 251416,
+      "name": "Plans: Prefect's Sabatons",
+      "profession": "BLACKSMITHING",
+      "skill": 240,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251416/plans-prefects-sabatons"
+    },
+    {
+      "id": 251417,
+      "name": "Plans: Justicar's Sabatons",
+      "profession": "BLACKSMITHING",
+      "skill": 240,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251417/plans-justicars-sabatons"
+    },
+    {
+      "id": 251418,
+      "name": "Plans: Officer's Gauntlet",
+      "profession": "BLACKSMITHING",
+      "skill": 175,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251418/plans-officers-gauntlet"
+    },
+    {
+      "id": 251419,
+      "name": "Plans: Sentinel's Gauntlet",
+      "profession": "BLACKSMITHING",
+      "skill": 175,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251419/plans-sentinels-gauntlet"
+    },
+    {
+      "id": 251420,
+      "name": "Plans: Warder's Gauntlet",
+      "profession": "BLACKSMITHING",
+      "skill": 175,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251420/plans-warders-gauntlet"
+    },
+    {
+      "id": 251421,
+      "name": "Plans: Prefect's Gauntlet",
+      "profession": "BLACKSMITHING",
+      "skill": 175,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251421/plans-prefects-gauntlet"
+    },
+    {
+      "id": 251422,
+      "name": "Plans: Justicar's Gauntlet",
+      "profession": "BLACKSMITHING",
+      "skill": 175,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251422/plans-justicars-gauntlet"
+    },
+    {
+      "id": 251423,
+      "name": "Plans: Officer's Waistguard",
+      "profession": "BLACKSMITHING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251423/plans-officers-waistguard"
+    },
+    {
+      "id": 251424,
+      "name": "Plans: Sentinel's Waistguard",
+      "profession": "BLACKSMITHING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251424/plans-sentinels-waistguard"
+    },
+    {
+      "id": 251425,
+      "name": "Plans: Warder's Waistguard",
+      "profession": "BLACKSMITHING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251425/plans-warders-waistguard"
+    },
+    {
+      "id": 251426,
+      "name": "Plans: Prefect's Waistguard",
+      "profession": "BLACKSMITHING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251426/plans-prefects-waistguard"
+    },
+    {
+      "id": 251427,
+      "name": "Plans: Justicar's Waistguard",
+      "profession": "BLACKSMITHING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251427/plans-justicars-waistguard"
+    },
+    {
+      "id": 251428,
+      "name": "Plans: Officer's Pauldrons",
+      "profession": "BLACKSMITHING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251428/plans-officers-pauldrons"
+    },
+    {
+      "id": 251429,
+      "name": "Plans: Sentinel's Pauldrons",
+      "profession": "BLACKSMITHING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251429/plans-sentinels-pauldrons"
+    },
+    {
+      "id": 251430,
+      "name": "Plans: Warder's Pauldrons",
+      "profession": "BLACKSMITHING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251430/plans-warders-pauldrons"
+    },
+    {
+      "id": 251431,
+      "name": "Plans: Prefect's Pauldrons",
+      "profession": "BLACKSMITHING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251431/plans-prefects-pauldrons"
+    },
+    {
+      "id": 251432,
+      "name": "Plans: Justicar's Pauldrons",
+      "profession": "BLACKSMITHING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251432/plans-justicars-pauldrons"
+    },
+    {
+      "id": 251433,
+      "name": "Plans: Officer's Wristguard",
+      "profession": "BLACKSMITHING",
+      "skill": 225,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251433/plans-officers-wristguard"
+    },
+    {
+      "id": 251434,
+      "name": "Plans: Sentinel's Wristguard",
+      "profession": "BLACKSMITHING",
+      "skill": 225,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251434/plans-sentinels-wristguard"
+    },
+    {
+      "id": 251435,
+      "name": "Plans: Warder's Wristguard",
+      "profession": "BLACKSMITHING",
+      "skill": 225,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251435/plans-warders-wristguard"
+    },
+    {
+      "id": 251436,
+      "name": "Plans: Prefect's Wristguard",
+      "profession": "BLACKSMITHING",
+      "skill": 225,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251436/plans-prefects-wristguard"
+    },
+    {
+      "id": 251437,
+      "name": "Plans: Justicar's Wristguards",
+      "profession": "BLACKSMITHING",
+      "skill": 225,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251437/plans-justicars-wristguards"
+    },
+    {
+      "id": 251447,
+      "name": "Plans: Enriched Thorium Breastplate",
+      "profession": "BLACKSMITHING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 120,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251447/plans-enriched-thorium-breastplate"
+    },
+    {
+      "id": 251448,
+      "name": "Plans: Enriched Thorium Leggings",
+      "profession": "BLACKSMITHING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 120,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251448/plans-enriched-thorium-leggings"
+    },
+    {
+      "id": 251449,
+      "name": "Plans: Enriched Thorium Helm",
+      "profession": "BLACKSMITHING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 120,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251449/plans-enriched-thorium-helm"
+    },
+    {
+      "id": 251465,
+      "name": "Plans: Thorium Greatmace",
+      "profession": "BLACKSMITHING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251465/plans-thorium-greatmace"
+    },
+    {
+      "id": 251466,
+      "name": "Plans: Thorium Cestus",
+      "profession": "BLACKSMITHING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251466/plans-thorium-cestus"
+    },
+    {
+      "id": 251471,
+      "name": "Plans: Legionite Glaive",
+      "profession": "BLACKSMITHING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 120,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=251471/plans-legionite-glaive"
+    },
+    {
+      "id": 285289,
+      "name": "Plans: Cracked Blacksmith Hammer",
+      "profession": "BLACKSMITHING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=285289/plans-cracked-blacksmith-hammer"
+    },
+    {
+      "id": 285290,
+      "name": "Plans: Mithril Blacksmith Hammer",
+      "profession": "BLACKSMITHING",
+      "skill": 195,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=285290/plans-mithril-blacksmith-hammer"
+    },
+    {
+      "id": 285291,
+      "name": "Plans: Arcanite Blacksmith Hammer",
+      "profession": "BLACKSMITHING",
+      "skill": 270,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256730,
+        "name": "Stondry Darkhammer"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=285291/plans-arcanite-blacksmith-hammer"
+    },
+    {
+      "id": 249885,
+      "name": "Recipe: Venomous Smoothie",
+      "profession": "COOKING",
+      "skill": 25,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256731,
+        "name": "Kalsey Sanden"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249885/recipe-venomous-smoothie"
+    },
+    {
+      "id": 249886,
+      "name": "Recipe: Slimy Smoothie",
+      "profession": "COOKING",
+      "skill": 100,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256731,
+        "name": "Kalsey Sanden"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249886/recipe-slimy-smoothie"
+    },
+    {
+      "id": 249887,
+      "name": "Recipe: Mrrggl Smrrthle",
+      "profession": "COOKING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256731,
+        "name": "Kalsey Sanden"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249887/recipe-mrrggl-smrrthle"
+    },
+    {
+      "id": 249888,
+      "name": "Recipe: Calcified Smoothie",
+      "profession": "COOKING",
+      "skill": 180,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256731,
+        "name": "Kalsey Sanden"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249888/recipe-calcified-smoothie"
+    },
+    {
+      "id": 249889,
+      "name": "Recipe: Spicy Smoothie",
+      "profession": "COOKING",
+      "skill": 200,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256731,
+        "name": "Kalsey Sanden"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249889/recipe-spicy-smoothie"
+    },
+    {
+      "id": 249890,
+      "name": "Recipe: Wicked Smoothie",
+      "profession": "COOKING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256731,
+        "name": "Kalsey Sanden"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249890/recipe-wicked-smoothie"
+    },
+    {
+      "id": 249476,
+      "name": "Formula: Mystic Mushroom",
+      "profession": "ENCHANTING",
+      "skill": 130,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249476/formula-mystic-mushroom"
+    },
+    {
+      "id": 249477,
+      "name": "Formula: Tenets of the Silver Hand",
+      "profession": "ENCHANTING",
+      "skill": 130,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249477/formula-tenets-of-the-silver-hand"
+    },
+    {
+      "id": 249478,
+      "name": "Formula: Polished Driftwood Icon",
+      "profession": "ENCHANTING",
+      "skill": 130,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249478/formula-polished-driftwood-icon"
+    },
+    {
+      "id": 249479,
+      "name": "Formula: Enchant Weapon - Insight",
+      "profession": "ENCHANTING",
+      "skill": 140,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249479/formula-enchant-weapon-insight"
+    },
+    {
+      "id": 249480,
+      "name": "Formula: Enchant Weapon - Recovery",
+      "profession": "ENCHANTING",
+      "skill": 140,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249480/formula-enchant-weapon-recovery"
+    },
+    {
+      "id": 249481,
+      "name": "Formula: Enchant Weapon - Revelation",
+      "profession": "ENCHANTING",
+      "skill": 140,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249481/formula-enchant-weapon-revelation"
+    },
+    {
+      "id": 249482,
+      "name": "Formula: Glimmering Staff",
+      "profession": "ENCHANTING",
+      "skill": 140,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249482/formula-glimmering-staff"
+    },
+    {
+      "id": 249483,
+      "name": "Formula: Soulstaff",
+      "profession": "ENCHANTING",
+      "skill": 140,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249483/formula-soulstaff"
+    },
+    {
+      "id": 249484,
+      "name": "Formula: Orb of Mystic Insight",
+      "profession": "ENCHANTING",
+      "skill": 140,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249484/formula-orb-of-mystic-insight"
+    },
+    {
+      "id": 249485,
+      "name": "Formula: Orb of Souls",
+      "profession": "ENCHANTING",
+      "skill": 140,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249485/formula-orb-of-souls"
+    },
+    {
+      "id": 249493,
+      "name": "Formula: Talons of Wrath",
+      "profession": "ENCHANTING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249493/formula-talons-of-wrath"
+    },
+    {
+      "id": 249494,
+      "name": "Formula: Libram of Invocation",
+      "profession": "ENCHANTING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249494/formula-libram-of-invocation"
+    },
+    {
+      "id": 249495,
+      "name": "Formula: Totem of Ancestral Protection",
+      "profession": "ENCHANTING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249495/formula-totem-of-ancestral-protection"
+    },
+    {
+      "id": 249496,
+      "name": "Formula: Enchant Necklace - Strength",
+      "profession": "ENCHANTING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249496/formula-enchant-necklace-strength"
+    },
+    {
+      "id": 249502,
+      "name": "Formula: Enchant Necklace - Spell Power",
+      "profession": "ENCHANTING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249502/formula-enchant-necklace-spell-power"
+    },
+    {
+      "id": 249503,
+      "name": "Formula: Enchant Necklace - Healing Power",
+      "profession": "ENCHANTING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249503/formula-enchant-necklace-healing-power"
+    },
+    {
+      "id": 249504,
+      "name": "Formula: Enchant Necklace - Agility",
+      "profession": "ENCHANTING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249504/formula-enchant-necklace-agility"
+    },
+    {
+      "id": 249505,
+      "name": "Formula: Enchant Necklace - Deflection",
+      "profession": "ENCHANTING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249505/formula-enchant-necklace-deflection"
+    },
+    {
+      "id": 249506,
+      "name": "Formula: Radiant Staff",
+      "profession": "ENCHANTING",
+      "skill": 220,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249506/formula-radiant-staff"
+    },
+    {
+      "id": 249507,
+      "name": "Formula: Dreamstaff",
+      "profession": "ENCHANTING",
+      "skill": 220,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249507/formula-dreamstaff"
+    },
+    {
+      "id": 249508,
+      "name": "Formula: Truesilver Conduit",
+      "profession": "ENCHANTING",
+      "skill": 220,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249508/formula-truesilver-conduit"
+    },
+    {
+      "id": 249509,
+      "name": "Formula: Twisting Essence Jar",
+      "profession": "ENCHANTING",
+      "skill": 220,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249509/formula-twisting-essence-jar"
+    },
+    {
+      "id": 249510,
+      "name": "Formula: Enchant Chest - Absorption",
+      "profession": "ENCHANTING",
+      "skill": 220,
+      "reputation": 3000,
+      "cost": 120,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249510/formula-enchant-chest-absorption"
+    },
+    {
+      "id": 249525,
+      "name": "Formula: Enchant 2H Weapon - Mighty Spell Power",
+      "profession": "ENCHANTING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 240,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249525/formula-enchant-2h-weapon-mighty-spell-power"
+    },
+    {
+      "id": 249526,
+      "name": "Formula: Enchant 2H Weapon - Mighty Healing Power",
+      "profession": "ENCHANTING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 240,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249526/formula-enchant-2h-weapon-mighty-healing-power"
+    },
+    {
+      "id": 249529,
+      "name": "Formula: Idol of the Dream",
+      "profession": "ENCHANTING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 240,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249529/formula-idol-of-the-dream"
+    },
+    {
+      "id": 249530,
+      "name": "Formula: Libram of Holy Alacrity",
+      "profession": "ENCHANTING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 240,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249530/formula-libram-of-holy-alacrity"
+    },
+    {
+      "id": 249532,
+      "name": "Formula: Totem of Thunder",
+      "profession": "ENCHANTING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 240,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249532/formula-totem-of-thunder"
+    },
+    {
+      "id": 249534,
+      "name": "Formula: Enchant Gloves - Arcane Power",
+      "profession": "ENCHANTING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 240,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249534/formula-enchant-gloves-arcane-power"
+    },
+    {
+      "id": 249535,
+      "name": "Formula: Enchant Gloves - Natural Power",
+      "profession": "ENCHANTING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 240,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249535/formula-enchant-gloves-natural-power"
+    },
+    {
+      "id": 249536,
+      "name": "Formula: Enchant Gloves - Holy Power",
+      "profession": "ENCHANTING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 240,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249536/formula-enchant-gloves-holy-power"
+    },
+    {
+      "id": 249537,
+      "name": "Formula: Brilliant Wand",
+      "profession": "ENCHANTING",
+      "skill": 275,
+      "reputation": 9000,
+      "cost": 180,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249537/formula-brilliant-wand"
+    },
+    {
+      "id": 249538,
+      "name": "Formula: Enchant Bracer - Superior Intellect",
+      "profession": "ENCHANTING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 240,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249538/formula-enchant-bracer-superior-intellect"
+    },
+    {
+      "id": 249539,
+      "name": "Formula: Enchant Bracer - Superior Deflection",
+      "profession": "ENCHANTING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 240,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=249539/formula-enchant-bracer-superior-deflection"
+    },
+    {
+      "id": 274393,
+      "name": "Formula: Enchant Off Hand - Wisdom",
+      "profession": "ENCHANTING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 240,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=274393/formula-enchant-off-hand-wisdom"
+    },
+    {
+      "id": 274394,
+      "name": "Formula: Enchant 2H Weapon - Spellblasting",
+      "profession": "ENCHANTING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 240,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=274394/formula-enchant-2h-weapon-spellblasting"
+    },
+    {
+      "id": 274398,
+      "name": "Formula: Enchant Gloves - Superior Strength",
+      "profession": "ENCHANTING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 240,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=274398/formula-enchant-gloves-superior-strength"
+    },
+    {
+      "id": 274399,
+      "name": "Formula: Enchant Cloak - Agility",
+      "profession": "ENCHANTING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 240,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=274399/formula-enchant-cloak-agility"
+    },
+    {
+      "id": 274401,
+      "name": "Formula: Enchant Bracer - Greater Spellpower",
+      "profession": "ENCHANTING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 240,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=274401/formula-enchant-bracer-greater-spellpower"
+    },
+    {
+      "id": 289560,
+      "name": "Formula: Enchant Boots - Speed",
+      "profession": "ENCHANTING",
+      "skill": 280,
+      "reputation": 9000,
+      "cost": 180,
+      "vendor": {
+        "id": 256732,
+        "name": "Alynsia"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=289560/formula-enchant-boots-speed"
+    },
+    {
+      "id": 264201,
+      "name": "Schematic: SAF-T Tabs",
+      "profession": "ENGINEERING",
+      "skill": 25,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=264201/schematic-saf-t-tabs"
+    },
+    {
+      "id": 264202,
+      "name": "Schematic: SAF-T Dynamite",
+      "profession": "ENGINEERING",
+      "skill": 25,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=264202/schematic-saf-t-dynamite"
+    },
+    {
+      "id": 264203,
+      "name": "Schematic: SAF-T Copper Bomb",
+      "profession": "ENGINEERING",
+      "skill": 55,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=264203/schematic-saf-t-copper-bomb"
+    },
+    {
+      "id": 264204,
+      "name": "Schematic: EZ-Thro Wrap",
+      "profession": "ENGINEERING",
+      "skill": 100,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=264204/schematic-ez-thro-wrap"
+    },
+    {
+      "id": 264205,
+      "name": "Schematic: EZ-Thro Copper Bomb XL",
+      "profession": "ENGINEERING",
+      "skill": 130,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=264205/schematic-ez-thro-copper-bomb-xl"
+    },
+    {
+      "id": 264206,
+      "name": "Schematic: No Slip SAF-T Padding",
+      "profession": "ENGINEERING",
+      "skill": 145,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=264206/schematic-no-slip-saf-t-padding"
+    },
+    {
+      "id": 264209,
+      "name": "Schematic: SAF-T Bell",
+      "profession": "ENGINEERING",
+      "skill": 175,
+      "reputation": 3000,
+      "cost": 180,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=264209/schematic-saf-t-bell"
+    },
+    {
+      "id": 264211,
+      "name": "Schematic: EZ-Thro Fireproof Fuse",
+      "profession": "ENGINEERING",
+      "skill": 190,
+      "reputation": 3000,
+      "cost": 180,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=264211/schematic-ez-thro-fireproof-fuse"
+    },
+    {
+      "id": 264216,
+      "name": "Schematic: Emergency Field Cloak",
+      "profession": "ENGINEERING",
+      "skill": 225,
+      "reputation": 9000,
+      "cost": 270,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=264216/schematic-emergency-field-cloak"
+    },
+    {
+      "id": 264217,
+      "name": "Schematic: Compact Critter Carrier",
+      "profession": "ENGINEERING",
+      "skill": 225,
+      "reputation": 9000,
+      "cost": 270,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=264217/schematic-compact-critter-carrier"
+    },
+    {
+      "id": 264220,
+      "name": "Schematic: SAF-T Disposable Parachute",
+      "profession": "ENGINEERING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 270,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=264220/schematic-saf-t-disposable-parachute"
+    },
+    {
+      "id": 264221,
+      "name": "Schematic: Gnomish Army Knife",
+      "profession": "ENGINEERING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 270,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": false,
+      "note": "Отсутствует в наблюдённом ассортименте Fritz Fizzle после запуска; старый каталог Wowhead продолжает указывать продажу. До подтверждения не включать в план покупки.",
+      "source": "https://www.wowhead.com/forever/item=264221/schematic-gnomish-army-knife"
+    },
+    {
+      "id": 264222,
+      "name": "Schematic: Loot-A-Rang",
+      "profession": "ENGINEERING",
+      "skill": 275,
+      "reputation": 9000,
+      "cost": 270,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": false,
+      "note": "Отсутствует в наблюдённом ассортименте Fritz Fizzle после запуска; старый каталог Wowhead продолжает указывать продажу. До подтверждения не включать в план покупки.",
+      "source": "https://www.wowhead.com/forever/item=264222/schematic-loot-a-rang"
+    },
+    {
+      "id": 264232,
+      "name": "Schematic: Ultrasafe Rechargeable Battery",
+      "profession": "ENGINEERING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 360,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=264232/schematic-ultrasafe-rechargeable-battery"
+    },
+    {
+      "id": 264234,
+      "name": "Schematic: Gnomish Poultryizer",
+      "profession": "ENGINEERING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 360,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=264234/schematic-gnomish-poultryizer"
+    },
+    {
+      "id": 264235,
+      "name": "Schematic: Ultralight Goblin Glider",
+      "profession": "ENGINEERING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 360,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=264235/schematic-ultralight-goblin-glider"
+    },
+    {
+      "id": 264237,
+      "name": "Schematic: Stealthman 52",
+      "profession": "ENGINEERING",
+      "skill": 300,
+      "reputation": 9000,
+      "cost": 360,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=264237/schematic-stealthman-52"
+    },
+    {
+      "id": 280321,
+      "name": "Schematic: Whimsical Waistwrap",
+      "profession": "ENGINEERING",
+      "skill": 175,
+      "reputation": 3000,
+      "cost": 180,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=280321/schematic-whimsical-waistwrap"
+    },
+    {
+      "id": 280322,
+      "name": "Schematic: Gizmo Girdle",
+      "profession": "ENGINEERING",
+      "skill": 175,
+      "reputation": 3000,
+      "cost": 180,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=280322/schematic-gizmo-girdle"
+    },
+    {
+      "id": 280323,
+      "name": "Schematic: Clanking Cord",
+      "profession": "ENGINEERING",
+      "skill": 175,
+      "reputation": 3000,
+      "cost": 180,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=280323/schematic-clanking-cord"
+    },
+    {
+      "id": 280325,
+      "name": "Schematic: Floppy Goggles",
+      "profession": "ENGINEERING",
+      "skill": 200,
+      "reputation": 3000,
+      "cost": 180,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=280325/schematic-floppy-goggles"
+    },
+    {
+      "id": 280326,
+      "name": "Schematic: Bent Goggles",
+      "profession": "ENGINEERING",
+      "skill": 200,
+      "reputation": 3000,
+      "cost": 180,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=280326/schematic-bent-goggles"
+    },
+    {
+      "id": 280327,
+      "name": "Schematic: Stuckbutton Goggles",
+      "profession": "ENGINEERING",
+      "skill": 200,
+      "reputation": 3000,
+      "cost": 180,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=280327/schematic-stuckbutton-goggles"
+    },
+    {
+      "id": 280328,
+      "name": "Schematic: Dented Goggles",
+      "profession": "ENGINEERING",
+      "skill": 200,
+      "reputation": 3000,
+      "cost": 180,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=280328/schematic-dented-goggles"
+    },
+    {
+      "id": 285285,
+      "name": "Schematic: Satchel of Copper Bombs",
+      "profession": "ENGINEERING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 45,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=285285/schematic-satchel-of-copper-bombs"
+    },
+    {
+      "id": 285286,
+      "name": "Schematic: Satchel of Bronze Bombs",
+      "profession": "ENGINEERING",
+      "skill": 165,
+      "reputation": 3000,
+      "cost": 180,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=285286/schematic-satchel-of-bronze-bombs"
+    },
+    {
+      "id": 285287,
+      "name": "Schematic: Satchel of Iron Bombs",
+      "profession": "ENGINEERING",
+      "skill": 230,
+      "reputation": 9000,
+      "cost": 270,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=285287/schematic-satchel-of-iron-bombs"
+    },
+    {
+      "id": 285288,
+      "name": "Schematic: Satchel of Dark Iron Bombs",
+      "profession": "ENGINEERING",
+      "skill": 285,
+      "reputation": 9000,
+      "cost": 270,
+      "vendor": {
+        "id": 256733,
+        "name": "Fritz Fizzle"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=285288/schematic-satchel-of-dark-iron-bombs"
+    },
+    {
+      "id": 252765,
+      "name": "Pattern: Brawler's Leather Belt",
+      "profession": "LEATHERWORKING",
+      "skill": 60,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252765/pattern-brawlers-leather-belt"
+    },
+    {
+      "id": 252766,
+      "name": "Pattern: Trapper's Leather Belt",
+      "profession": "LEATHERWORKING",
+      "skill": 60,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252766/pattern-trappers-leather-belt"
+    },
+    {
+      "id": 252767,
+      "name": "Pattern: Defender's Leather Belt",
+      "profession": "LEATHERWORKING",
+      "skill": 60,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252767/pattern-defenders-leather-belt"
+    },
+    {
+      "id": 252768,
+      "name": "Pattern: Totemic Leather Belt",
+      "profession": "LEATHERWORKING",
+      "skill": 60,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252768/pattern-totemic-leather-belt"
+    },
+    {
+      "id": 252769,
+      "name": "Pattern: Stormrider's Leather Belt",
+      "profession": "LEATHERWORKING",
+      "skill": 60,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252769/pattern-stormriders-leather-belt"
+    },
+    {
+      "id": 252770,
+      "name": "Pattern: Wisdom's Leather Belt",
+      "profession": "LEATHERWORKING",
+      "skill": 60,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252770/pattern-wisdoms-leather-belt"
+    },
+    {
+      "id": 252777,
+      "name": "Pattern: Brawler's Leather Gloves",
+      "profession": "LEATHERWORKING",
+      "skill": 75,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252777/pattern-brawlers-leather-gloves"
+    },
+    {
+      "id": 252778,
+      "name": "Pattern: Trapper's Leather Gloves",
+      "profession": "LEATHERWORKING",
+      "skill": 75,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252778/pattern-trappers-leather-gloves"
+    },
+    {
+      "id": 252779,
+      "name": "Pattern: Defender's Leather Gloves",
+      "profession": "LEATHERWORKING",
+      "skill": 75,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252779/pattern-defenders-leather-gloves"
+    },
+    {
+      "id": 252780,
+      "name": "Pattern: Totemic Leather Gloves",
+      "profession": "LEATHERWORKING",
+      "skill": 75,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252780/pattern-totemic-leather-gloves"
+    },
+    {
+      "id": 252781,
+      "name": "Pattern: Stormrider's Leather Gloves",
+      "profession": "LEATHERWORKING",
+      "skill": 75,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252781/pattern-stormriders-leather-gloves"
+    },
+    {
+      "id": 252782,
+      "name": "Pattern: Wisdom's Leather Gloves",
+      "profession": "LEATHERWORKING",
+      "skill": 75,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252782/pattern-wisdoms-leather-gloves"
+    },
+    {
+      "id": 252786,
+      "name": "Pattern: Brawler's Leather Boots",
+      "profession": "LEATHERWORKING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252786/pattern-brawlers-leather-boots"
+    },
+    {
+      "id": 252787,
+      "name": "Pattern: Trapper's Leather Boots",
+      "profession": "LEATHERWORKING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252787/pattern-trappers-leather-boots"
+    },
+    {
+      "id": 252788,
+      "name": "Pattern: Defender's Leather Boots",
+      "profession": "LEATHERWORKING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252788/pattern-defenders-leather-boots"
+    },
+    {
+      "id": 252789,
+      "name": "Pattern: Totemic Leather Boots",
+      "profession": "LEATHERWORKING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252789/pattern-totemic-leather-boots"
+    },
+    {
+      "id": 252790,
+      "name": "Pattern: Stormrider's Leather Boots",
+      "profession": "LEATHERWORKING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252790/pattern-stormriders-leather-boots"
+    },
+    {
+      "id": 252791,
+      "name": "Pattern: Wisdom's Leather Boots",
+      "profession": "LEATHERWORKING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252791/pattern-wisdoms-leather-boots"
+    },
+    {
+      "id": 252798,
+      "name": "Pattern: Brawler's Leather Hood",
+      "profession": "LEATHERWORKING",
+      "skill": 100,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252798/pattern-brawlers-leather-hood"
+    },
+    {
+      "id": 252799,
+      "name": "Pattern: Trapper's Leather Hood",
+      "profession": "LEATHERWORKING",
+      "skill": 100,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252799/pattern-trappers-leather-hood"
+    },
+    {
+      "id": 252800,
+      "name": "Pattern: Defender's Leather Hood",
+      "profession": "LEATHERWORKING",
+      "skill": 100,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252800/pattern-defenders-leather-hood"
+    },
+    {
+      "id": 252801,
+      "name": "Pattern: Totemic Leather Hood",
+      "profession": "LEATHERWORKING",
+      "skill": 100,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252801/pattern-totemic-leather-hood"
+    },
+    {
+      "id": 252802,
+      "name": "Pattern: Stormrider's Leather Hood",
+      "profession": "LEATHERWORKING",
+      "skill": 100,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252802/pattern-stormriders-leather-hood"
+    },
+    {
+      "id": 252803,
+      "name": "Pattern: Wisdom's Leather Hood",
+      "profession": "LEATHERWORKING",
+      "skill": 100,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252803/pattern-wisdoms-leather-hood"
+    },
+    {
+      "id": 252805,
+      "name": "Pattern: Brawler's Leather Tunic",
+      "profession": "LEATHERWORKING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252805/pattern-brawlers-leather-tunic"
+    },
+    {
+      "id": 252806,
+      "name": "Pattern: Trapper's Leather Tunic",
+      "profession": "LEATHERWORKING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252806/pattern-trappers-leather-tunic"
+    },
+    {
+      "id": 252807,
+      "name": "Pattern: Defender's Leather Tunic",
+      "profession": "LEATHERWORKING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252807/pattern-defenders-leather-tunic"
+    },
+    {
+      "id": 252808,
+      "name": "Pattern: Totemic Leather Tunic",
+      "profession": "LEATHERWORKING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252808/pattern-totemic-leather-tunic"
+    },
+    {
+      "id": 252809,
+      "name": "Pattern: Stormrider's Leather Tunic",
+      "profession": "LEATHERWORKING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252809/pattern-stormriders-leather-tunic"
+    },
+    {
+      "id": 252810,
+      "name": "Pattern: Wisdom's Leather Tunic",
+      "profession": "LEATHERWORKING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252810/pattern-wisdoms-leather-tunic"
+    },
+    {
+      "id": 252820,
+      "name": "Pattern: Brawler's Leather Legguards",
+      "profession": "LEATHERWORKING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252820/pattern-brawlers-leather-legguards"
+    },
+    {
+      "id": 252821,
+      "name": "Pattern: Trapper's Leather Legguards",
+      "profession": "LEATHERWORKING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252821/pattern-trappers-leather-legguards"
+    },
+    {
+      "id": 252822,
+      "name": "Pattern: Defender's Leather Kilt",
+      "profession": "LEATHERWORKING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252822/pattern-defenders-leather-kilt"
+    },
+    {
+      "id": 252823,
+      "name": "Pattern: Totemic Leather Leggings",
+      "profession": "LEATHERWORKING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252823/pattern-totemic-leather-leggings"
+    },
+    {
+      "id": 252824,
+      "name": "Pattern: Stormrider's Leather Kilt",
+      "profession": "LEATHERWORKING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252824/pattern-stormriders-leather-kilt"
+    },
+    {
+      "id": 252825,
+      "name": "Pattern: Wisdom's Leather Leggings",
+      "profession": "LEATHERWORKING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252825/pattern-wisdoms-leather-leggings"
+    },
+    {
+      "id": 252834,
+      "name": "Pattern: Forceful Thick Armor Kit",
+      "profession": "LEATHERWORKING",
+      "skill": 185,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252834/pattern-forceful-thick-armor-kit"
+    },
+    {
+      "id": 252836,
+      "name": "Pattern: Prowler's Leather Gloves",
+      "profession": "LEATHERWORKING",
+      "skill": 175,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252836/pattern-prowlers-leather-gloves"
+    },
+    {
+      "id": 252837,
+      "name": "Pattern: Skulker's Leather Gloves",
+      "profession": "LEATHERWORKING",
+      "skill": 175,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252837/pattern-skulkers-leather-gloves"
+    },
+    {
+      "id": 252838,
+      "name": "Pattern: Stalker's Leather Gloves",
+      "profession": "LEATHERWORKING",
+      "skill": 175,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252838/pattern-stalkers-leather-gloves"
+    },
+    {
+      "id": 252839,
+      "name": "Pattern: Warden's Leather Gloves",
+      "profession": "LEATHERWORKING",
+      "skill": 175,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252839/pattern-wardens-leather-gloves"
+    },
+    {
+      "id": 252840,
+      "name": "Pattern: Skirmisher's Leather Gloves",
+      "profession": "LEATHERWORKING",
+      "skill": 175,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252840/pattern-skirmishers-leather-gloves"
+    },
+    {
+      "id": 252841,
+      "name": "Pattern: Skycaller's Leather Gloves",
+      "profession": "LEATHERWORKING",
+      "skill": 175,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252841/pattern-skycallers-leather-gloves"
+    },
+    {
+      "id": 252842,
+      "name": "Pattern: Mender's Leather Gloves",
+      "profession": "LEATHERWORKING",
+      "skill": 175,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252842/pattern-menders-leather-gloves"
+    },
+    {
+      "id": 252848,
+      "name": "Pattern: Prowler's Leather Shoulders",
+      "profession": "LEATHERWORKING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252848/pattern-prowlers-leather-shoulders"
+    },
+    {
+      "id": 252849,
+      "name": "Pattern: Skulker's Leather Shoulder",
+      "profession": "LEATHERWORKING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252849/pattern-skulkers-leather-shoulder"
+    },
+    {
+      "id": 252850,
+      "name": "Pattern: Warden's Leather Shoulders",
+      "profession": "LEATHERWORKING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252850/pattern-wardens-leather-shoulders"
+    },
+    {
+      "id": 252851,
+      "name": "Pattern: Skycaller's Leather Shoulders",
+      "profession": "LEATHERWORKING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252851/pattern-skycallers-leather-shoulders"
+    },
+    {
+      "id": 252852,
+      "name": "Pattern: Mender's Leather Shoulders",
+      "profession": "LEATHERWORKING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252852/pattern-menders-leather-shoulders"
+    },
+    {
+      "id": 252853,
+      "name": "Pattern: Prowler's Leather Bracers",
+      "profession": "LEATHERWORKING",
+      "skill": 225,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252853/pattern-prowlers-leather-bracers"
+    },
+    {
+      "id": 252854,
+      "name": "Pattern: Skulker's Leather Bracers",
+      "profession": "LEATHERWORKING",
+      "skill": 225,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252854/pattern-skulkers-leather-bracers"
+    },
+    {
+      "id": 252855,
+      "name": "Pattern: Warden's Leather Bracers",
+      "profession": "LEATHERWORKING",
+      "skill": 225,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252855/pattern-wardens-leather-bracers"
+    },
+    {
+      "id": 252856,
+      "name": "Pattern: Skycaller's Leather Bracers",
+      "profession": "LEATHERWORKING",
+      "skill": 225,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252856/pattern-skycallers-leather-bracers"
+    },
+    {
+      "id": 252857,
+      "name": "Pattern: Mender's Leather Bracers",
+      "profession": "LEATHERWORKING",
+      "skill": 225,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252857/pattern-menders-leather-bracers"
+    },
+    {
+      "id": 252860,
+      "name": "Pattern: Prowler's Leather Boots",
+      "profession": "LEATHERWORKING",
+      "skill": 235,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252860/pattern-prowlers-leather-boots"
+    },
+    {
+      "id": 252861,
+      "name": "Pattern: Skulker's Leather Boots",
+      "profession": "LEATHERWORKING",
+      "skill": 235,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252861/pattern-skulkers-leather-boots"
+    },
+    {
+      "id": 252862,
+      "name": "Pattern: Warden's Leather Boots",
+      "profession": "LEATHERWORKING",
+      "skill": 235,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252862/pattern-wardens-leather-boots"
+    },
+    {
+      "id": 252863,
+      "name": "Pattern: Skycaller's Leather Boots",
+      "profession": "LEATHERWORKING",
+      "skill": 235,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252863/pattern-skycallers-leather-boots"
+    },
+    {
+      "id": 252864,
+      "name": "Pattern: Mender's Leather Boots",
+      "profession": "LEATHERWORKING",
+      "skill": 235,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252864/pattern-menders-leather-boots"
+    },
+    {
+      "id": 252872,
+      "name": "Pattern: Prowler's Leather Waistguard",
+      "profession": "LEATHERWORKING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252872/pattern-prowlers-leather-waistguard"
+    },
+    {
+      "id": 252873,
+      "name": "Pattern: Skulker's Leather Waistguard",
+      "profession": "LEATHERWORKING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252873/pattern-skulkers-leather-waistguard"
+    },
+    {
+      "id": 252874,
+      "name": "Pattern: Warden's Leather Waistguard",
+      "profession": "LEATHERWORKING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252874/pattern-wardens-leather-waistguard"
+    },
+    {
+      "id": 252875,
+      "name": "Pattern: Skycaller's Leather Waistguard",
+      "profession": "LEATHERWORKING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252875/pattern-skycallers-leather-waistguard"
+    },
+    {
+      "id": 252876,
+      "name": "Pattern: Mender's Leather Waistguard",
+      "profession": "LEATHERWORKING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252876/pattern-menders-leather-waistguard"
+    },
+    {
+      "id": 252900,
+      "name": "Pattern: Stalker's Mail Shoulders",
+      "profession": "LEATHERWORKING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252900/pattern-stalkers-mail-shoulders"
+    },
+    {
+      "id": 252901,
+      "name": "Pattern: Skycaller's Mail Shoulders",
+      "profession": "LEATHERWORKING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252901/pattern-skycallers-mail-shoulders"
+    },
+    {
+      "id": 252902,
+      "name": "Pattern: Skirmisher's Mail Shoulders",
+      "profession": "LEATHERWORKING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252902/pattern-skirmishers-mail-shoulders"
+    },
+    {
+      "id": 252903,
+      "name": "Pattern: Mender's Mail Shoulders",
+      "profession": "LEATHERWORKING",
+      "skill": 210,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252903/pattern-menders-mail-shoulders"
+    },
+    {
+      "id": 252904,
+      "name": "Pattern: Stalker's Mail Bracers",
+      "profession": "LEATHERWORKING",
+      "skill": 225,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252904/pattern-stalkers-mail-bracers"
+    },
+    {
+      "id": 252905,
+      "name": "Pattern: Skycaller's Mail Bracers",
+      "profession": "LEATHERWORKING",
+      "skill": 225,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252905/pattern-skycallers-mail-bracers"
+    },
+    {
+      "id": 252906,
+      "name": "Pattern: Skirmisher's Mail Bracers",
+      "profession": "LEATHERWORKING",
+      "skill": 225,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252906/pattern-skirmishers-mail-bracers"
+    },
+    {
+      "id": 252907,
+      "name": "Pattern: Mender's Mail Bracers",
+      "profession": "LEATHERWORKING",
+      "skill": 225,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252907/pattern-menders-mail-bracers"
+    },
+    {
+      "id": 252910,
+      "name": "Pattern: Stalker's Mail Sabatons",
+      "profession": "LEATHERWORKING",
+      "skill": 235,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252910/pattern-stalkers-mail-sabatons"
+    },
+    {
+      "id": 252911,
+      "name": "Pattern: Skycaller's Mail Sabatons",
+      "profession": "LEATHERWORKING",
+      "skill": 235,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252911/pattern-skycallers-mail-sabatons"
+    },
+    {
+      "id": 252912,
+      "name": "Pattern: Skirmisher's Mail Sabatons",
+      "profession": "LEATHERWORKING",
+      "skill": 235,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252912/pattern-skirmishers-mail-sabatons"
+    },
+    {
+      "id": 252913,
+      "name": "Pattern: Mender's Mail Sabatons",
+      "profession": "LEATHERWORKING",
+      "skill": 235,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252913/pattern-menders-mail-sabatons"
+    },
+    {
+      "id": 252922,
+      "name": "Pattern: Stalker's Mail Belt",
+      "profession": "LEATHERWORKING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252922/pattern-stalkers-mail-belt"
+    },
+    {
+      "id": 252923,
+      "name": "Pattern: Skycaller's Mail Belt",
+      "profession": "LEATHERWORKING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252923/pattern-skycallers-mail-belt"
+    },
+    {
+      "id": 252924,
+      "name": "Pattern: Skirmisher's Mail Belt",
+      "profession": "LEATHERWORKING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252924/pattern-skirmishers-mail-belt"
+    },
+    {
+      "id": 252925,
+      "name": "Pattern: Mender's Mail Belt",
+      "profession": "LEATHERWORKING",
+      "skill": 250,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252925/pattern-menders-mail-belt"
+    },
+    {
+      "id": 252941,
+      "name": "Pattern: Mystic Rugged Armor Kit",
+      "profession": "LEATHERWORKING",
+      "skill": 235,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256734,
+        "name": "Daniel Stitchsong"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=252941/pattern-mystic-rugged-armor-kit"
+    },
+    {
+      "id": 253890,
+      "name": "Pattern: Pristine Boots",
+      "profession": "TAILORING",
+      "skill": 60,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253890/pattern-pristine-boots"
+    },
+    {
+      "id": 253892,
+      "name": "Pattern: Silky Boots",
+      "profession": "TAILORING",
+      "skill": 60,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253892/pattern-silky-boots"
+    },
+    {
+      "id": 253894,
+      "name": "Pattern: Flame Boots",
+      "profession": "TAILORING",
+      "skill": 60,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253894/pattern-flame-boots"
+    },
+    {
+      "id": 253896,
+      "name": "Pattern: Shadow Boots",
+      "profession": "TAILORING",
+      "skill": 60,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253896/pattern-shadow-boots"
+    },
+    {
+      "id": 253898,
+      "name": "Pattern: Pearly Boots",
+      "profession": "TAILORING",
+      "skill": 60,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253898/pattern-pearly-boots"
+    },
+    {
+      "id": 253900,
+      "name": "Pattern: Shining Boots",
+      "profession": "TAILORING",
+      "skill": 60,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253900/pattern-shining-boots"
+    },
+    {
+      "id": 253914,
+      "name": "Pattern: Pristine Gloves",
+      "profession": "TAILORING",
+      "skill": 75,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253914/pattern-pristine-gloves"
+    },
+    {
+      "id": 253916,
+      "name": "Pattern: Silky Gloves",
+      "profession": "TAILORING",
+      "skill": 75,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253916/pattern-silky-gloves"
+    },
+    {
+      "id": 253918,
+      "name": "Pattern: Flame Gloves",
+      "profession": "TAILORING",
+      "skill": 75,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253918/pattern-flame-gloves"
+    },
+    {
+      "id": 253920,
+      "name": "Pattern: Shadow Gloves",
+      "profession": "TAILORING",
+      "skill": 75,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253920/pattern-shadow-gloves"
+    },
+    {
+      "id": 253922,
+      "name": "Pattern: Pearly Gloves",
+      "profession": "TAILORING",
+      "skill": 75,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253922/pattern-pearly-gloves"
+    },
+    {
+      "id": 253924,
+      "name": "Pattern: Shining Gloves",
+      "profession": "TAILORING",
+      "skill": 75,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253924/pattern-shining-gloves"
+    },
+    {
+      "id": 253926,
+      "name": "Pattern: Pristine Sash",
+      "profession": "TAILORING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253926/pattern-pristine-sash"
+    },
+    {
+      "id": 253928,
+      "name": "Pattern: Silky Sash",
+      "profession": "TAILORING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253928/pattern-silky-sash"
+    },
+    {
+      "id": 253930,
+      "name": "Pattern: Flame Sash",
+      "profession": "TAILORING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253930/pattern-flame-sash"
+    },
+    {
+      "id": 253932,
+      "name": "Pattern: Shadow Sash",
+      "profession": "TAILORING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253932/pattern-shadow-sash"
+    },
+    {
+      "id": 253934,
+      "name": "Pattern: Pearly Sash",
+      "profession": "TAILORING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253934/pattern-pearly-sash"
+    },
+    {
+      "id": 253936,
+      "name": "Pattern: Shining Sash",
+      "profession": "TAILORING",
+      "skill": 85,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253936/pattern-shining-sash"
+    },
+    {
+      "id": 253950,
+      "name": "Pattern: Pristine Circlet",
+      "profession": "TAILORING",
+      "skill": 100,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253950/pattern-pristine-circlet"
+    },
+    {
+      "id": 253952,
+      "name": "Pattern: Silky Circlet",
+      "profession": "TAILORING",
+      "skill": 100,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253952/pattern-silky-circlet"
+    },
+    {
+      "id": 253954,
+      "name": "Pattern: Flame Circlet",
+      "profession": "TAILORING",
+      "skill": 100,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253954/pattern-flame-circlet"
+    },
+    {
+      "id": 253956,
+      "name": "Pattern: Shadow Circlet",
+      "profession": "TAILORING",
+      "skill": 100,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253956/pattern-shadow-circlet"
+    },
+    {
+      "id": 253958,
+      "name": "Pattern: Pearly Circlet",
+      "profession": "TAILORING",
+      "skill": 100,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253958/pattern-pearly-circlet"
+    },
+    {
+      "id": 253960,
+      "name": "Pattern: Shining Circlet",
+      "profession": "TAILORING",
+      "skill": 100,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253960/pattern-shining-circlet"
+    },
+    {
+      "id": 253962,
+      "name": "Pattern: Pristine Gown",
+      "profession": "TAILORING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253962/pattern-pristine-gown"
+    },
+    {
+      "id": 253964,
+      "name": "Pattern: Silky Gown",
+      "profession": "TAILORING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253964/pattern-silky-gown"
+    },
+    {
+      "id": 253966,
+      "name": "Pattern: Flame Gown",
+      "profession": "TAILORING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253966/pattern-flame-gown"
+    },
+    {
+      "id": 253968,
+      "name": "Pattern: Shadow Gown",
+      "profession": "TAILORING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253968/pattern-shadow-gown"
+    },
+    {
+      "id": 253970,
+      "name": "Pattern: Pearly Gown",
+      "profession": "TAILORING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253970/pattern-pearly-gown"
+    },
+    {
+      "id": 253972,
+      "name": "Pattern: Shining Gown",
+      "profession": "TAILORING",
+      "skill": 110,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253972/pattern-shining-gown"
+    },
+    {
+      "id": 253988,
+      "name": "Pattern: Pristine Leggings",
+      "profession": "TAILORING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253988/pattern-pristine-leggings"
+    },
+    {
+      "id": 253990,
+      "name": "Pattern: Silky Leggings",
+      "profession": "TAILORING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253990/pattern-silky-leggings"
+    },
+    {
+      "id": 253992,
+      "name": "Pattern: Flame Leggings",
+      "profession": "TAILORING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253992/pattern-flame-leggings"
+    },
+    {
+      "id": 253994,
+      "name": "Pattern: Shadow Leggings",
+      "profession": "TAILORING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253994/pattern-shadow-leggings"
+    },
+    {
+      "id": 253996,
+      "name": "Pattern: Pearly Leggings",
+      "profession": "TAILORING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253996/pattern-pearly-leggings"
+    },
+    {
+      "id": 253998,
+      "name": "Pattern: Shining Leggings",
+      "profession": "TAILORING",
+      "skill": 125,
+      "reputation": 0,
+      "cost": 30,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=253998/pattern-shining-leggings"
+    },
+    {
+      "id": 254024,
+      "name": "Pattern: Frothing Handwraps",
+      "profession": "TAILORING",
+      "skill": 165,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254024/pattern-frothing-handwraps"
+    },
+    {
+      "id": 254026,
+      "name": "Pattern: Fiery Handwraps",
+      "profession": "TAILORING",
+      "skill": 165,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254026/pattern-fiery-handwraps"
+    },
+    {
+      "id": 254028,
+      "name": "Pattern: Black Handwraps",
+      "profession": "TAILORING",
+      "skill": 165,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254028/pattern-black-handwraps"
+    },
+    {
+      "id": 254030,
+      "name": "Pattern: Golden Handwraps",
+      "profession": "TAILORING",
+      "skill": 165,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254030/pattern-golden-handwraps"
+    },
+    {
+      "id": 254032,
+      "name": "Pattern: Radiant Handwraps",
+      "profession": "TAILORING",
+      "skill": 165,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254032/pattern-radiant-handwraps"
+    },
+    {
+      "id": 254036,
+      "name": "Pattern: Mageweave Reagent Bag",
+      "profession": "TAILORING",
+      "skill": 190,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254036/pattern-mageweave-reagent-bag"
+    },
+    {
+      "id": 254050,
+      "name": "Pattern: Nethergeld Shoulders",
+      "profession": "TAILORING",
+      "skill": 195,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254050/pattern-nethergeld-shoulders"
+    },
+    {
+      "id": 254052,
+      "name": "Pattern: Netherfroth Shoulders",
+      "profession": "TAILORING",
+      "skill": 195,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254052/pattern-netherfroth-shoulders"
+    },
+    {
+      "id": 254054,
+      "name": "Pattern: Netherflame Shoulders",
+      "profession": "TAILORING",
+      "skill": 195,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254054/pattern-netherflame-shoulders"
+    },
+    {
+      "id": 254056,
+      "name": "Pattern: Netherpearl Shoulders",
+      "profession": "TAILORING",
+      "skill": 195,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254056/pattern-netherpearl-shoulders"
+    },
+    {
+      "id": 254058,
+      "name": "Pattern: Nethershine Shoulders",
+      "profession": "TAILORING",
+      "skill": 195,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254058/pattern-nethershine-shoulders"
+    },
+    {
+      "id": 254060,
+      "name": "Pattern: Netherlight Shoulders",
+      "profession": "TAILORING",
+      "skill": 195,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254060/pattern-netherlight-shoulders"
+    },
+    {
+      "id": 254062,
+      "name": "Pattern: Nethergeld Cuffs",
+      "profession": "TAILORING",
+      "skill": 205,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254062/pattern-nethergeld-cuffs"
+    },
+    {
+      "id": 254064,
+      "name": "Pattern: Netherfroth Cuffs",
+      "profession": "TAILORING",
+      "skill": 205,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254064/pattern-netherfroth-cuffs"
+    },
+    {
+      "id": 254066,
+      "name": "Pattern: Netherflame Cuffs",
+      "profession": "TAILORING",
+      "skill": 205,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254066/pattern-netherflame-cuffs"
+    },
+    {
+      "id": 254068,
+      "name": "Pattern: Netherpearl Cuffs",
+      "profession": "TAILORING",
+      "skill": 205,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254068/pattern-netherpearl-cuffs"
+    },
+    {
+      "id": 254070,
+      "name": "Pattern: Nethershine Cuffs",
+      "profession": "TAILORING",
+      "skill": 205,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254070/pattern-nethershine-cuffs"
+    },
+    {
+      "id": 254072,
+      "name": "Pattern: Netherlight Cuffs",
+      "profession": "TAILORING",
+      "skill": 205,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254072/pattern-netherlight-cuffs"
+    },
+    {
+      "id": 254080,
+      "name": "Pattern: Runecloth Reagent Bag",
+      "profession": "TAILORING",
+      "skill": 215,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254080/pattern-runecloth-reagent-bag"
+    },
+    {
+      "id": 254082,
+      "name": "Pattern: Gilded Waistcord",
+      "profession": "TAILORING",
+      "skill": 215,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254082/pattern-gilded-waistcord"
+    },
+    {
+      "id": 254084,
+      "name": "Pattern: Frothing Waistcord",
+      "profession": "TAILORING",
+      "skill": 215,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254084/pattern-frothing-waistcord"
+    },
+    {
+      "id": 254086,
+      "name": "Pattern: Fiery Waistcord",
+      "profession": "TAILORING",
+      "skill": 215,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254086/pattern-fiery-waistcord"
+    },
+    {
+      "id": 254088,
+      "name": "Pattern: Black Waistcord",
+      "profession": "TAILORING",
+      "skill": 215,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254088/pattern-black-waistcord"
+    },
+    {
+      "id": 254090,
+      "name": "Pattern: Golden Waistcord",
+      "profession": "TAILORING",
+      "skill": 215,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254090/pattern-golden-waistcord"
+    },
+    {
+      "id": 254092,
+      "name": "Pattern: Radiant Waistcord",
+      "profession": "TAILORING",
+      "skill": 215,
+      "reputation": 3000,
+      "cost": 60,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254092/pattern-radiant-waistcord"
+    },
+    {
+      "id": 254108,
+      "name": "Pattern: Gilded Sandals",
+      "profession": "TAILORING",
+      "skill": 235,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254108/pattern-gilded-sandals"
+    },
+    {
+      "id": 254110,
+      "name": "Pattern: Frothing Sandals",
+      "profession": "TAILORING",
+      "skill": 235,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254110/pattern-frothing-sandals"
+    },
+    {
+      "id": 254112,
+      "name": "Pattern: Fiery Sandals",
+      "profession": "TAILORING",
+      "skill": 235,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254112/pattern-fiery-sandals"
+    },
+    {
+      "id": 254114,
+      "name": "Pattern: Black Sandals",
+      "profession": "TAILORING",
+      "skill": 235,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254114/pattern-black-sandals"
+    },
+    {
+      "id": 254116,
+      "name": "Pattern: Golden Sandals",
+      "profession": "TAILORING",
+      "skill": 235,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254116/pattern-golden-sandals"
+    },
+    {
+      "id": 254118,
+      "name": "Pattern: Radiant Sandals",
+      "profession": "TAILORING",
+      "skill": 235,
+      "reputation": 9000,
+      "cost": 90,
+      "vendor": {
+        "id": 256735,
+        "name": "Mivin Shadowweave"
+      },
+      "available": true,
+      "source": "https://www.wowhead.com/forever/item=254118/pattern-radiant-sandals"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Валюта Merchant's Favor и восемь сдач ящиков — Wowhead Forever",
+      "url": "https://www.wowhead.com/forever/currency=3402/merchants-favor"
+    },
+    {
+      "title": "Состав ящиков: каталог, сверенный с карточками Forever",
+      "url": "https://github.com/AidVir/wow-forever-favor/blob/main/data/crates.js"
+    },
+    {
+      "title": "Актуальные ID ящиков и цены EU PvP Alliance",
+      "url": "https://raw.githubusercontent.com/AidVir/wow-forever-favor/main/data/prices.json"
+    },
+    {
+      "title": "Ассортимент Nina Surefire — Icy Veins Forever",
+      "url": "https://db.icy-veins.com/wow-forever/npcs/256729"
+    },
+    {
+      "title": "Ассортимент Stondry Darkhammer — Icy Veins Forever",
+      "url": "https://db.icy-veins.com/wow-forever/npcs/256730"
+    },
+    {
+      "title": "Ассортимент Kalsey Sanden — Icy Veins Forever",
+      "url": "https://db.icy-veins.com/wow-forever/npcs/256731"
+    },
+    {
+      "title": "Ассортимент Alynsia — Icy Veins Forever",
+      "url": "https://db.icy-veins.com/wow-forever/npcs/256732"
+    },
+    {
+      "title": "Ассортимент Daniel Stitchsong — Icy Veins Forever",
+      "url": "https://db.icy-veins.com/wow-forever/npcs/256734"
+    },
+    {
+      "title": "Ассортимент Mivin Shadowweave — Icy Veins Forever",
+      "url": "https://db.icy-veins.com/wow-forever/npcs/256735"
+    },
+    {
+      "title": "Наблюдённый ассортимент Fritz Fizzle после запуска",
+      "url": "https://wow-forever.gg/db/npcs/256733-fritz-fizzle/"
+    },
+    {
+      "title": "Схемы инженерного дела и цены — Wowhead Forever",
+      "url": "https://www.wowhead.com/forever/guide/professions/engineering-overview-trainer-locations-recipes"
+    },
+    {
+      "title": "Серебро Apprentice: запись в игре, build 1.60.1.70938",
+      "url": "https://guildloot.de/en/quest/forever/91899-a-sealed-crate/"
+    },
+    {
+      "title": "Серебро Journeyman: запись в игре",
+      "url": "https://guildloot.de/en/quest/forever/91900-a-sealed-crate/"
+    },
+    {
+      "title": "Серебро Expert: запись в игре 21.11.2026",
+      "url": "https://guide.wow4ever.se/en/quests/91901"
+    },
+    {
+      "title": "Серебро зелёного Apprentice: карточка задания",
+      "url": "https://www.warcraftforever.wiki/wiki/A_Sealed_Crate_(Quest_91904)"
+    },
+    {
+      "title": "Серебро зелёного Journeyman: запись в игре 21.11.2026",
+      "url": "https://guide.wow4ever.se/en/quests/91905"
+    },
+    {
+      "title": "Серебро зелёного Expert: игровая запись",
+      "url": "https://foreverdb.net/quest/91906-a-sealed-crate"
+    },
+    {
+      "title": "Повторяемость всех восьми сдач — QuestieDB Forever",
+      "url": "https://github.com/Questie/QuestieDB/blob/master/src/corrections/Forever/foreverQuestFixes.lua"
+    },
+    {
+      "title": "Shipping Label: разовые 50 Favor и 2000 репутации",
+      "url": "https://db.icy-veins.com/wow-forever/quests/98247"
+    },
+    {
+      "title": "Performance Bonus: случайное удвоение Favor",
+      "url": "https://www.wowhead.com/forever/spell=1225456/performance-bonus"
+    },
+    {
+      "title": "Blizzard: в Forever нет конвертации опыта в золото",
+      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24315281/wow-forever-hotfixes-november-20-2026"
+    }
+  ]
+}

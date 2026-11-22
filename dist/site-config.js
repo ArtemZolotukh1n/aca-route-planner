@@ -1,1 +1,1 @@
-window.ACA_SITE={"version":"2.0.0","url":"https://ArtemZolotukh1n.github.io/aca-route-planner/"};
+window.ACA_SITE={"version":"2.1.0","url":"https://artemzolotukh1n.github.io/aca-route-planner/"};

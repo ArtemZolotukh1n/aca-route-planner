@@ -13,12 +13,12 @@ ROOT = Path(__file__).resolve().parent
 DIST = ROOT / "dist"
 OUTPUT = ROOT / "portable"
 ARCHIVE = ROOT / "Azeroth-Commerce-Authority-Windows.zip"
-VERSION = "2.0.0"
+VERSION = "2.1.0"
 ASSETS = (
     "data.json", "maps.json", "routes.json", "geography.json",
-    "overview-maps.json", "route-audits.json", "prices.json",
+    "overview-maps.json", "route-audits.json", "prices.json", "favor-data.json",
 )
-SCRIPTS = ("site-config.js", "planner-core.js", "prices.js", "app.js")
+SCRIPTS = ("site-config.js", "planner-core.js", "prices.js", "favor-core.js", "favor-ui.js", "app.js")
 
 
 def script_json(value):
@@ -54,6 +54,10 @@ def portable_instructions(site_url):
 Python, Node.js, установка программ и локальный сервер не нужны.
 Карты, каталог и четыре маршрута встроены в index.html и доступны без сети.
 Для кнопки обновления цен и перехода по ссылкам нужен интернет.
+Во вкладке «Монеты и рецепты» укажите баланс Merchant’s Favor из игры,
+выберите рецепты или желаемый баланс и скопируйте список ящиков и материалов.
+План покрывает цель базовыми монетами; Performance Bonus — только прогноз.
+Возврат серебра Artisan пока не учтён. Баланс после сдач обновите вручную.
 Цены относятся к EU PvP Alliance: смотрите дату снимка в интерфейсе.
 При неудачном обновлении остаётся предыдущий снимок. Цена выставленного
 лота не гарантирует его наличие, нужный размер стека или окупаемость.
